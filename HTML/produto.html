@@ -10,48 +10,41 @@
 
     <div class="container1">
 
+        <div class="bordaEsquerda"></div>
+        <div class="bordaDireita"></div>
+
         <div class="fotoPrincipal"></div>
 
         <div class="seletorFotos">
-            <div class="fotoBarra1"><button><img src="../IMG/velas1.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div class="fotoBarra2"><button><img src="../IMG/velas2.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div class="fotoBarra3"><button><img src="../IMG/velas3.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div class="fotoBarra4"><button><img src="../IMG/velas4.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div class="fotoBarra5"><button><img src="../IMG/velas5.JPG" height="100vh" width="100vw" alt=""></button></div>
+            <div><button class="fotoBarra1"><img src="../IMG/velas1.JPG" height="100vh" width="100vw" alt=""></button></div>
+            <div><button class="fotoBarra2"><img src="../IMG/velas2.JPG" height="100vh" width="100vw" alt=""></button></div>
+            <div><button class="fotoBarra3"><img src="../IMG/velas3.JPG" height="100vh" width="100vw" alt=""></button></div>
+            <div><button class="fotoBarra4"><img src="../IMG/velas4.JPG" height="100vh" width="100vw" alt=""></button></div>
+            <div><button class="fotoBarra5"><img src="../IMG/velas5.JPG" height="100vh" width="100vw" alt=""></button></div>
 
         </div>
 
        <div class="btn1"><button class="btnComprar">
 
-        <a href="" class="letra1"></a>
-        <a href="" class="letra2"></a>
-        <a href="" class="letra3"></a>
-        <a href="" class="letra4"></a>
-        <a href="" class="letra5"></a>
-        <a href="" class="letra6"></a>
-        <a href="" class="letra7"></a>
+        <a href="" class="letra1">C</a>
+        <a href="" class="letra2">O</a>
+        <a href="" class="letra3">M</a>
+        <a href="" class="letra4">P</a>
+        <a href="" class="letra5">R</a>
+        <a href="" class="letra6">A</a>
+        <a href="" class="letra7">R</a>
 
   </button>
-
-        <div class="caixaQuantidadeItens">
-            <button class="adicionarQuantidade">+</button>
-            <p class="quantidadeItens">1</p>
-            <button class="subtrairQuantidade">-</button>
-        </div>
-
      </div>
 
+<div class="containerItens">
 
-       <div class="btn2">
-
-      <div class="adicionarCarrinho">
-
-        <button class="botaoAdicionarCarrinho"><img src="../IMG/adicionarCarrinho.png" height="50vh" width="50vw" alt=""></button>
-        
-      </div>
-
-       </div>
-
+     <div class="caixaQuantidadeItens">
+        <button class="adicionarQuantidade">+</button>
+        <p class="quantidadeItens">1</p>
+        <button class="subtrairQuantidade">-</button>
+    </div>
+</div>
 
        <div class="containerInformacaoProduto">
 
@@ -63,20 +56,32 @@
 
 
         <div class="caixaDescricao">
-            <p class="nomeDescricao">Descrição do Produto</p>
+            <p class="nomeDescricao">Kit Velas de Coco</p>
             <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus quidem obcaecati debitis repellendus earum veritatis odio dolorum error consectetur? Officiis facilis vel totam quisquam aliquid! Laborum veniam ratione quisquam eos natus id impedit ut maiores neque, perferendis consectetur amet cumque provident assumenda rem. Magnam numquam sed vo</p>
         </div>
 
+        
+       <div class="divBtnAdicionarCarrinho">
+
+
+        <button class="botaoAdicionarCarrinho"><p>Adicionar ao Carrinho</p> <img src="../IMG/adicionar-ao-carrinho-de-compras.png" height="40vh" width="40vw" 
+            alt=""></button>
+
        </div>
 
-
-       <div class="caixaCep">
-        <p>Insira seu CEP</p>
-        <button>Calcular</button>
        </div>
 
+       <div class="cep-container">
+        <input type="text" id="cep" name="cep" class="cep-input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="    Insira Seu CEP. (EX:04682-010)" required>
+        <button class="enviar">Calcular</button>
+      </div>
+
+      <div class="divNaoSeiMeuCep">
+      <button class="botaoNaoSeiMeuCep">Não sei meu Cep</button>
+</div>
     </div>
 
 
 </body>
 </html>
+
