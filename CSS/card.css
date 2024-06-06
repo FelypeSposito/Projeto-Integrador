@@ -16,7 +16,7 @@
 } */
 
 .card-1{
-    height: 45vh;
+    height: 55vh;
     display: grid;
     grid-template-columns: 3% 1% 15.5% 17.5% 45% 15% 3%;
     grid-template-rows: 40% 14.5% 14.5% 29%;
@@ -98,6 +98,7 @@ grid-template-rows: 80% 20%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 5% 90% 5%;
+    background-color: #403924;
 }
 
 .letra1 {
@@ -127,6 +128,7 @@ grid-template-rows: 80% 20%;
     display: grid;
     grid-template-rows: 15% 20% 5% 20% 5% 20% 15%;
     grid-template-columns: 10% 80% 10%;
+    background-color: #403924;
   }
 
   .btn-categoria-1{
@@ -147,4 +149,93 @@ grid-template-rows: 80% 20%;
   .container-categorias div button{
     height: 100%;
     width: 100%;
+  }
+
+  .container-descricao-card-1{
+    grid-column: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+    grid-template-rows: 12.5% 17.5% 57.5% 12.5%;
+    background: #403924;
+  }
+
+
+  .fundoClaro-descricao-card-1{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 2;
+    background-color: #E8E8E8;
+    display: grid;
+    grid-template-rows: 30% 58% 12%;
+    grid-template-columns: 4% 92% 4%;
+  }
+
+  .div-titulo-descricao-card-1{
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    display: grid;
+    grid-template-columns: 2.5% 95% 2.5%;
+  }
+
+  .titulo-card-1{
+    align-self: center;
+    grid-column: 2;
+  }
+
+  .descricao-card-1{
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 2.5% 95% 2.5%;
+    background-color: #403924;
+    color: #E8E8E8;
+  }
+  
+  .descricao-card-1 p{
+    grid-column: 2;
+  }
+
+  .container-notas-card-1{
+    grid-column: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 12.5% 75% 12.5%;
+    grid-template-rows: 12.5% 75% 12.5%;
+    background-color: #403924;
+  }
+
+  .caixa-notas-card-1{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #E8E8E8;
+    display: grid;
+    grid-template-rows: 30% 58% 12%;
+    grid-template-columns: 10% 80% 10%;
+  }
+
+  .titulo-notas-card-1{
+    display: grid;
+    grid-column: 2;
+  }
+
+  .titulo-notas-card-1 p{
+    align-self: center;
+  }
+
+  .fundo-verde-notas-card-1{
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #403924;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .fundo-verde-notas-card-1 ul{
+    color: white;
   }
