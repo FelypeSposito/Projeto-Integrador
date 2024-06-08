@@ -4,14 +4,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    height: 100vh;
-    display: grid;
+body {
+  background-color: antiquewhite;
+}
+
+.container-card-1 {
+  height: 100vh;
+  display: grid;
 }
 
 /* .card-1{
@@ -21,32 +25,32 @@
     grid-template-columns: 2.5% 1% 15% 1% 7.5% 71.5% 2.5%;
 } */
 
-.card-1{
-    height: 55vh;
-    display: grid;
-    grid-template-columns: 3% 1% 15.5% 17.5% 45% 15% 3%;
-    grid-template-rows: 40% 14.5% 7.25% 7.25% 29%;
+.card-1 {
+  height: 55vh;
+  display: grid;
+  grid-template-columns: 3% 1% 15.5% 17.5% 45% 15% 3%;
+  grid-template-rows: 40% 14.5% 7.25% 7.25% 29%;
 }
 
-.container-foto-card-1{
-grid-column-start: 2;
-grid-column-end: 4;
-grid-row-start: 1;
-grid-row-end: 4;
+.container-foto-card-1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
 
-border: 2px solid #403924;
-border-bottom-left-radius: 10px;
-border-top-right-radius: 10px;
+  border: 2px solid #403924;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
 
-display: grid;
-grid-template-rows: 80% 20%;
+  display: grid;
+  grid-template-rows: 80% 20%;
 }
 
-.foto-card-1{
+.foto-card-1 {
   border-top-right-radius: 10px;
 }
 
-.preco-card-1{
+.preco-card-1 {
   display: grid;
   align-content: center;
   justify-content: center;
@@ -54,251 +58,300 @@ grid-template-rows: 80% 20%;
   border-bottom-left-radius: 10px;
 }
 
-.preco-card-1 p{
+.preco-card-1 p {
   font-family: 'Inter';
   font-size: 125%;
 }
 
-.container-btn-adicionar-carrinho-card-1{
-    grid-row-start: 4;
-    grid-row-end: 6;
-    grid-column: 3;
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 17.5% 65% 17.5%;
-    background-color: #403924;
-    border-bottom-left-radius: 20px;
+.titulo-principal-card-1 {
+  grid-row: 1;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 7.5% 5% 80% 7.5%;
+  grid-template-rows: 50% 35% 15%;
 }
 
-.div-botao-carrinho{
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 20% 60% 20%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
+.titulo-principal-card-1 p {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 2;
+  font-family: 'Julius Sans One';
+  font-size: 160%;
+  align-self: flex-end;
+  justify-self: start;
+  text-shadow: 5px 5px 15px #403924;
 }
 
-.btn-adicionar-carrinho-card-1{
-    grid-row: 2;
-    grid-column: 2;
-    border-radius: 20px;
-    background-color: #403924;
-    border: 0px solid;
+
+.container-btn-adicionar-carrinho-card-1 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: 27.5% 47.5% 27.5%;
+  grid-template-rows: 15% 65% 15%;
+  background-color: #403924;
+  border-bottom-left-radius: 20px;
 }
 
-.container-btn-categorias{
-    grid-column: 4;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+.linha-topo-card-1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: grid;
 }
 
-.btnComprar{
-    display: grid;
-    grid-template-rows: 5% 12.85% 12.85% 12.85% 12.85% 12.85% 12.85% 12.85% 5%;
-    height: 100%;
-    /* width: 100%; */
-    grid-row: 2;
-    grid-column: 2;
-    border: none;
-    font-family: 'Julius Sans One';
-    font-size: 80%;
+.linha-card-1 {
+  height: 1px;
+  width: 100%;
+  align-self: center;
+  background-color: #403924;
 }
 
-.btn-comprar-card-1{
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 5% 90% 5%;
-    background-color: #403924;
+.div-botao-carrinho-card-1 {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 25% 50% 25%;
+  background-color: #E8E8E8;
+  border-radius: 15px;
 }
 
-.letra1 {
-    grid-row: 2;
-  }
-  .letra2 {
-    grid-row: 3;
-  }
-  .letra3 {
-    grid-row: 4;
-  }
-  .letra4 {
-    grid-row: 5;
-  }
-  .letra5 {
-    grid-row: 6;
-  }
-  .letra6 {
-    grid-row: 7;
-  }
-  .letra7 {
-    grid-row: 8;
-  }
+.btn-adicionar-carrinho-card-1 {
+  grid-row: 2;
+  grid-column: 2;
+  border-radius: 15px;
+  background-color: #403924;
+  border: 0px solid;
+}
 
-  .letra1, .letra2, .letra3, .letra4, .letra5, .letra6, .letra7{
-    text-decoration: none;
-    align-self: center;
-  }
+.container-btn-categorias-card-1 {
+  grid-column: 4;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
 
-
-
-  .container-categorias{
-    display: grid;
-    grid-template-rows: 20% 15% 7.5% 15% 7.5% 15% 20%;
-    grid-template-columns: 5% 90% 50%;
-    background-color: #403924;
-  }
-
-  .btn-categoria-1{
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  .btn-categoria-1 button{
-    border-radius: 5px;
-    border: none;
-  }
-
-  .btn-categoria-2{
-    grid-row: 4;
-    grid-column: 2;
-  }
-
-  .btn-categoria-2 button{
-    border-radius: 5px;
-    border: 2px solid #E8E8E8;
-    background-color: #403924;
-    color: #E8E8E8;
-  }
-
-  .btn-categoria-3{
-    grid-row: 6;
-    grid-column: 2;
-  }
-
-  .btn-categoria-3 button{
-    border-radius: 5px;
-    border: 2px solid #E8E8E8;
-    background-color: #403924;
-    color: #E8E8E8;
-  }
-
-  .container-categorias div button{
-    height: 100%;
-    width: 100%;
-  }
-
-  .btn-categoria-1 button,  .btn-categoria-2 button,  .btn-categoria-3 button{
-    font-family: 'inter';
-    font-size: 70%;
-  }
-
-  .container-descricao-card-1{
-    grid-column: 5;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    display: grid;
-    grid-template-columns: 3% 94% 3%;
-    grid-template-rows: 12.5% 17.5% 57.5% 12.5%;
-    background: #403924;
-  }
+.btn-geral-comprar-card-1 {
+  display: grid;
+  grid-template-rows: 10% 11.42% 11.42% 11.42% 11.42% 11.42% 11.42% 11.42% 10%;
+  height: 100%;
+  /* width: 100%; */
+  grid-row: 2;
+  grid-column: 2;
+  border: none;
+  font-family: 'Julius Sans One';
+  font-size: 75%;
+  font-weight: bold;
+}
 
 
-  .fundoClaro-descricao-card-1{
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column: 2;
-    background-color: #E8E8E8;
-    display: grid;
-    grid-template-rows: 30% 58% 12%;
-    grid-template-columns: 4% 92% 4%;
-    border-radius: 10px;
-  }
+.btn-comprar-card-1 {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 5% 90% 5%;
+  background-color: #403924;
+}
 
-  .div-titulo-descricao-card-1{
-    grid-row: 1;
-    grid-column: 2;
-    display: grid;
-    display: grid;
-    grid-template-columns: 2.5% 95% 2.5%;
-    grid-template-rows: 50% 50%;
-    font-family: 'Inter';
-  }
+.letra1-card-1 {
+  grid-row: 2;
+}
 
-  .titulo-card-1{
-    align-self: center;
-    grid-column: 2;
-    grid-row: 2;
-    align-self: flex-start;
-  }
+.letra2-card-1 {
+  grid-row: 3;
+}
 
-  .descricao-card-1{
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    align-content: center;
-    grid-template-columns: 2.5% 95% 2.5%;
-    background-color: #403924;
-    color: #E8E8E8;
-    border-radius: 10px;
-  }
-  
-  .descricao-card-1 p{
-    grid-column: 2;
-    font-family: 'Inter';
-    font-size: 75%;
-  }
+.letra3-card-1 {
+  grid-row: 4;
+}
 
-  .container-notas-card-1{
-    grid-column: 6;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    display: grid;
-    grid-template-columns: 12.5% 75% 12.5%;
-    grid-template-rows: 12.5% 75% 12.5%;
-    background-color: #403924;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+.letra4-card-1 {
+  grid-row: 5;
+}
 
-  .caixa-notas-card-1{
-    grid-column: 2;
-    grid-row: 2;
-    background-color: #E8E8E8;
-    display: grid;
-    grid-template-rows: 30% 58% 12%;
-    grid-template-columns: 10% 80% 10%;
-    border-radius: 15px;
-  }
+.letra5-card-1 {
+  grid-row: 6;
+}
 
-  .titulo-notas-card-1{
-    display: grid;
-    grid-column: 2;
-    grid-template-rows: 50% 50%;
-  }
-  
-  .titulo-notas-card-1 p{
-    grid-row: 2;
-    align-self: flex-start;
-  }
+.letra6-card-1 {
+  grid-row: 7;
+}
 
-  .titulo-notas-card-1 p{
-    align-self: center;
-  }
+.letra7-card-1 {
+  grid-row: 8;
+}
 
-  .fundo-verde-notas-card-1{
-    grid-row: 2;
-    grid-column: 2;
-    background-color: #403924;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    border-radius: 15px;
-  }
+.letra1-card-1, .letra2-card-1, .letra3-card-1, .letra4-card-1, .letra5-card-1, .letra6-card-1, .letra7-card-1 {
+  text-decoration: none;
+  align-self: center;
+}
 
-  .fundo-verde-notas-card-1 ul{
-    color: white;
-  }
+
+
+.container-categorias-card-1 {
+  display: grid;
+  grid-template-rows: 20% 15% 7.5% 15% 7.5% 15% 20%;
+  grid-template-columns: 5% 90% 50%;
+  background-color: #403924;
+}
+
+.btn-categoria-1-card-1 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.btn-categoria-1-card-1 button {
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-categoria-2-card-1 {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.btn-categoria-2-card-1 button {
+  border-radius: 5px;
+  border: 2px solid #E8E8E8;
+  background-color: #403924;
+  color: #E8E8E8;
+}
+
+.btn-categoria-3-card-1 {
+  grid-row: 6;
+  grid-column: 2;
+}
+
+.btn-categoria-3-card-1 button {
+  border-radius: 5px;
+  border: 2px solid #E8E8E8;
+  background-color: #403924;
+  color: #E8E8E8;
+}
+
+.container-categorias-card-1 div button {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-categoria-1 button, .btn-categoria-2 button, .btn-categoria-3 button {
+  font-family: 'inter';
+  font-size: 70%;
+}
+
+.container-descricao-card-1 {
+  grid-column: 5;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  display: grid;
+  grid-template-columns: 3% 94% 3%;
+  grid-template-rows: 12.5% 17.5% 57.5% 12.5%;
+  background: #403924;
+}
+
+
+.fundoClaro-descricao-card-1 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 2;
+  background-color: #E8E8E8;
+  display: grid;
+  grid-template-rows: 30% 58% 12%;
+  grid-template-columns: 4% 92% 4%;
+  border-radius: 10px;
+}
+
+.div-titulo-descricao-card-1 {
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+  display: grid;
+  grid-template-columns: 2.5% 95% 2.5%;
+  grid-template-rows: 50% 50%;
+  font-family: 'Inter';
+}
+
+.titulo-card-1 {
+  align-self: center;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: flex-start;
+  font-family: 'Junge';
+  font-size: 110%;
+}
+
+.descricao-card-1 {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 2.5% 95% 2.5%;
+  background-color: #403924;
+  color: #E8E8E8;
+  border-radius: 10px;
+}
+
+.descricao-card-1 p {
+  grid-column: 2;
+  font-family: 'Junge';
+  font-size: 75%;
+  color: #cbcbcb;
+}
+
+.container-notas-card-1 {
+  grid-column: 6;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  display: grid;
+  grid-template-columns: 12.5% 75% 12.5%;
+  grid-template-rows: 12.5% 75% 12.5%;
+  background-color: #403924;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.caixa-notas-card-1 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #E8E8E8;
+  display: grid;
+  grid-template-rows: 30% 58% 12%;
+  grid-template-columns: 10% 80% 10%;
+  border-radius: 15px;
+}
+
+.titulo-notas-card-1 {
+  display: grid;
+  grid-column: 2;
+  grid-template-rows: 50% 50%;
+}
+
+.titulo-notas-card-1 p {
+  grid-row: 2;
+  align-self: flex-start;
+  font-family: 'Junge';
+}
+
+.titulo-notas-card-1 p {
+  align-self: center;
+}
+
+.fundo-verde-notas-card-1 {
+  grid-row: 2;
+  grid-column: 2;
+  background-color: #403924;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 15px;
+}
+
+.fundo-verde-notas-card-1 ul {
+  color: #CBCBCB;
+  font-family: 'Inter';
+  font-size: 80%;
+  line-height: 150%
+}
