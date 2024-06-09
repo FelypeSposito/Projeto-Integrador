@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.produtos-em-destaque-container{
+    height: 12.5vh;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+
+.titulo-produtos-em-destaque{
+    align-self: flex-end;
+    justify-self: center;
+    grid-column: 2;
+    font-family: 'Julius Sans One';
+    text-shadow: 5px 5px 20px;
+    font-size: 150%;
+}
