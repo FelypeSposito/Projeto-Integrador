@@ -1,6 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
 }
 
 .container-card-2{
@@ -9,7 +19,7 @@
 
 .base-card-2{
     display: grid;
-    grid-template-columns: 2.5% 20% 5% 70% 2.5%;
+    grid-template-columns: 2.5% 15.5% 7.5% 70% 4.5%;
     grid-template-rows: 100%;
     height: 40vh;
 }
@@ -41,11 +51,210 @@
 
 .fundo-preco-card-2 p{
     font-size: 150%;
-    color: rgb(213, 213, 213);
+    color: #E8E8E8;
 }
 
 .container-direito-card-2{
     grid-column: 4;
     display: grid;
     grid-template-columns: 10%;
+    border: 2px solid;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 2% 10% 2.5% 12.5% 5% 66% 2%;
+    grid-template-rows: 100%;
+    background-color: #403924;
 }
+
+.btn-geral-comprar-card-semelhante-1{
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 10% 11.42% 11.42% 11.42% 11.42% 11.42% 11.42% 11.42% 10%;
+    height: 100%;
+    border: none;
+    font-family: 'Julius Sans One';
+    font-size: 75%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botao-comprar-card-semelhante-1{
+    grid-column: 2;
+    display: grid;
+}
+
+
+.btn-comprar-card-semelhante-1 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 5% 90% 5%;
+    background-color: #403924;
+  }
+  
+  .letra1-card-semelhante-1 {
+    grid-row: 2;
+  }
+  
+  .letra2-card-semelhante-1 {
+    grid-row: 3;
+  }
+  
+  .letra3-card-semelhante-1 {
+    grid-row: 4;
+  }
+  
+  .letra4-card-semelhante-1 {
+    grid-row: 5;
+  }
+  
+  .letra5-card-semelhante-1 {
+    grid-row: 6;
+  }
+  
+  .letra6-card-semelhante-1 {
+    grid-row: 7;
+  }
+  
+  .letra7-card-semelhante-1 {
+    grid-row: 8;
+  }
+  
+  .letra1-card-semelhante-1, .letra2-card-semelhante-1, .letra3-card-semelhante-1, .letra4-card-semelhante-1, .letra5-card-semelhante-1, .letra6-card-semelhante-1, .letra7-card-semelhante-1 {
+    text-decoration: none;
+    align-self: center;
+  }
+  
+
+  .container-categorias-botao-card-semelhante-1{
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: 100%;
+    background-color: #403924;
+  }
+
+  .categorias-botao-card-semelhante-1{
+    display: grid;
+    grid-template-rows: 20% 20% 10% 20% 10% 20% ;
+  }
+
+  .categoria-1-card-semelhante-1{
+    grid-row: 2;
+  }
+
+  .categoria-1-card-semelhante-1 button{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #403924;
+  }
+
+  .categoria-2-card-semelhante-1{
+    grid-row: 4;
+  }
+
+  .categoria-2-card-semelhante-1 button{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #E8E8E8;
+    background-color: #403924;
+    color: #E8E8E8;
+  }
+
+  .categoria-3-card-semelhante-1{
+    grid-row: 6;
+  }
+
+  .categoria-3-card-semelhante-1 button{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #E8E8E8;
+    background-color: #403924;
+    color: #E8E8E8;
+  }
+
+  .botao-carrinho-card-semelhante-1{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+  }
+
+  .container-btn-adicionar-carrinho-card-1 {
+  
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 70% 10%;
+    background-color: #403924;
+  }
+
+  .div-botao-carrinho-card-1 {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 50% 25%;
+    background-color: #E8E8E8;
+    border-radius: 15px;
+  }
+  
+  .btn-adicionar-carrinho-card-1 {
+    grid-row: 2;
+    grid-column: 2;
+    border-radius: 15px;
+    background-color: #403924;
+    border: 0px solid;
+  }
+  
+
+
+  .container-descricao-produto-card-semelhante-1{
+    grid-column: 6;
+    border: 2px solid #403924;
+    display: grid;
+    grid-template-rows: 10% 70% 10%;
+    grid-template-columns: 100%;
+    background-color: #403924;
+    align-content: center;
+  }
+
+  .subcontainer-card-semelhante-1{
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 10% 20% 50% 20%;
+    grid-template-columns: 5% 90% 5%;
+    background-color: #E8E8E8;
+    border-radius: 20px;
+  }
+
+  .titulo-subcontainer-card-semelhante-1{
+    grid-row: 2;
+    grid-column: 2;
+    padding-left: 20px;
+    align-self: center;
+    font-family: 'Julius Sans One';
+  }
+
+  .subsubcontainer-card-semelhante-1{
+    grid-row: 3;
+    grid-column: 2;
+    background-color: #403924;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    border-radius: 20px;
+  }
+
+  .descricao-card-semelhante-1{
+    align-self: center;
+    justify-self: center;
+    color: #E8E8E8;
+    font-size: 80%;
+    grid-column: 2;
+    font-family: 'Inter';
+  }

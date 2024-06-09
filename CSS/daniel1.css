@@ -1,0 +1,408 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Julius Sans One:wght@100..900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(#d9cdb8, #bfb195);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: grid;
+    background-color: #403924;
+    height: 17vh;
+    grid-template-columns: 5% 25% 5% 5% 15% 15% 15% 15% 5%;
+    grid-template-rows: 10% 80% 10%;
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+#nav1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#logo {
+    height: 120%;
+}
+
+#nav2 {
+    grid-column: 5;
+    grid-row: 2;
+    color: white;
+    text-decoration: none;
+    align-content: center;
+}
+
+#nav2:hover{
+    opacity: 75%;
+}
+
+#nav3 {
+    grid-column: 6;
+    grid-row: 2;
+    color: white;
+    text-decoration: none;
+    align-content: center;
+}
+
+#nav3:hover{
+    opacity: 75%;
+}
+
+#nav4 {
+    grid-column: 7;
+    grid-row: 2;
+    color: white;
+    text-decoration: none;
+    align-content: center;
+}
+
+#nav4:hover{
+    opacity: 75%;
+}
+
+#nav5 {
+    grid-column: 8;
+    grid-row: 2;
+    color: white;
+    text-decoration: none;
+    align-content: center;
+}
+
+#nav5:hover{
+    opacity: 75%;
+}
+
+.nossos-produtos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 21% 16% 5% 16% 5% 16% 21%;
+    grid-template-rows: 10vh 38vh 10vh 36vh 10vh 36vh 10vh;
+    text-justify: Julius Sans One-word;
+}
+
+#prod1 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg1 {
+    width: 100%;
+    height: 95%;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#prod2 {
+    width: 100%;
+    height: 100%;
+    grid-column: 4;
+    grid-row: 2;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg2 {
+    width: 100%;
+    height: 95%;
+    grid-column: 4;
+    grid-row: 2;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#prod3 {
+    width: 100%;
+    height: 100%;
+    grid-column: 6;
+    grid-row: 2;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg3 {
+    width: 100%;
+    height: 95%;
+    grid-column: 6;
+    grid-row: 2;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#prod4 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 4;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg4 {
+    width: 100%;
+    height: 95%;
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#prod5 {
+    width: 100%;
+    height: 100%;
+    grid-column: 4;
+    grid-row: 4;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg5 {
+    width: 100%;
+    height: 95%;
+    grid-column: 4;
+    grid-row: 4;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#prod6 {
+    width: 100%;
+    height: 100%;
+    grid-column: 6;
+    grid-row: 4;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg6 {
+    width: 100%;
+    height: 95%;
+    grid-column: 6;
+    grid-row: 4;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#prod7 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 6;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg7 {
+    width: 100%;
+    height: 95%;
+    grid-column: 2;
+    grid-row: 6;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+#prod8 {
+    width: 100%;
+    height: 100%;
+    grid-column: 4;
+    grid-row: 6;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg8 {
+    width: 100%;
+    height: 95%;
+    grid-column: 4;
+    grid-row: 6;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+#prod9 {
+    width: 100%;
+    height: 100%;
+    grid-column: 6;
+    grid-row: 6;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg9 {
+    width: 100%;
+    height: 95%;
+    grid-column: 6;
+    grid-row: 6;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.produtos-abaixo {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 31% 16% 6% 16% 31%;
+    grid-template-rows: 38vh 10vh;
+    text-justify: Julius Sans One-word;
+}
+
+#prod10 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg10 {
+    width: 100%;
+    height: 95%;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#prod11 {
+    width: 100%;
+    height: 100%;
+    grid-column: 4;
+    grid-row: 1;
+    align-content: end;
+    text-align: center;
+    background-color: #403924;
+    border: 2px solid #403924;
+    border-radius: 20px;
+    border-bottom: 2vh solid #403924;
+    color: white;
+    font-family: 'Julius Sans One';
+    text-decoration: none;
+}
+ 
+#prodimg11 {
+    width: 100%;
+    height: 95%;
+    grid-column: 4;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
