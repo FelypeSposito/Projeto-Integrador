@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 .produtos-em-destaque-container{
     height: 12.5vh;
@@ -384,7 +391,7 @@ body {
 
   .barra-marrom{
     grid-column: 2;
-    height: 6px;
+    height: 2px;
     background-color: #403924;
   }
 
@@ -464,7 +471,7 @@ body {
     height: 100%;
     grid-template-columns: 18% 18% 5% 18% 5% 18% 18%;
     grid-template-rows: 10vh 38vh 10vh 36vh 10vh 36vh 10vh;
-    text-justify: Julius Sans One-word;
+    text-justify: inter-word;
 }
 
 #prod1 {
@@ -781,3 +788,297 @@ body {
     color: white;
     text-decoration: none;
 }
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.quem-somos {
+  background-color: #403924;
+  color: white;
+  border-radius: 20px;
+  margin-left: 170px;
+  margin-right: 170px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.quem-somos > h1 {
+  text-decoration: underline 1px;
+  font-family: 'Inter';
+  font-size: 150%;
+}
+
+.quem-somos > p {
+  font-family: 'Inter';
+  margin-top: 10px;
+  font-size: 95%;
+}
+
+.conhecer {
+  color: white;
+  background-color: #403924;
+  margin-top: 3vh;
+  border-radius: 10px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.conhecer > center > button {
+  font-family: 'Julius Sans One';
+  font-size: 120%;
+  background-color: #403924;
+  height: 100%;
+  width: 100%;
+  border: 10px solid #403924;
+  border-radius: 10px;
+  color: #E8E8E8;
+}
+
+
+.outros {
+  width: 100%;
+  font-family: 'Julius Sans One';
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+  grid-template-rows: 50vh 20vh;
+  grid-template-areas: 
+      "historia contato velas"
+      "topo contato velas"
+  ;
+}
+
+#outro1 {
+  background-color: #403924;
+  text-decoration: none;
+  color: white;
+  grid-area: historia;
+  font-size: 150%;
+  text-align: center;
+  align-content: center;
+}
+
+#outro1:hover {
+  background-color: #252115;
+}
+
+#outro2 {
+  background-color: white;
+  text-decoration: none;
+  color: #403924;
+  grid-area: contato;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: center;
+  align-content: center;
+  font-size: 150%;
+}
+
+#outro2:hover {
+  background-color: rgb(218, 218, 218);
+}
+
+#outro3 {
+  background-color: #a0a0a0;
+  text-decoration: none;
+  color: white;
+  grid-area: velas;
+  text-align: center;
+  align-content: center;
+  font-size: 170%;
+}
+
+#outro3:hover {
+  background-color: rgb(100, 100, 100)
+}
+
+#outro4 {
+  background-color: #8d8d8d;
+  text-decoration: none;
+  color: white;
+  grid-area: topo;
+  text-align: center;
+  align-content: center;
+  font-size: 160%;
+}
+
+#outro4:hover {
+  background-color:  #555555;
+}
+
+
+/* INICIO FOOTER */
+
+
+.container-footer{
+  height: 40vh;
+  background-color: #403924 ;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 2.5% 40% 27.5% 27.5% 2.5%;
+}
+
+.titulo-contatos-footer{
+  grid-column: 2;
+  align-self: flex-end;
+  justify-self: center;
+  color: aliceblue;
+  font-family: 'Julius Sans One';
+  font-size: 170%;
+}
+
+.container-contatos-footer{
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 20% 3.3% 20% 3.3% 20% 3.3% 20%;
+  grid-template-columns: 100%;
+}
+
+.container-contatos-footer p{
+  align-self: center;
+  justify-self: center;
+  color: #D9D9D9;
+  font-family: 'Julius Sans One';
+}
+
+.linha-1-footer{
+  display: grid;
+  grid-template-columns: 5% 10% 85%;
+}
+
+.linha-2-footer{
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 5% 15% 80%;
+}
+
+.linha-3-footer{
+  grid-row: 5;
+  display: grid;
+  grid-template-columns: 5% 15% 80%;
+}
+
+.linha-4-footer{
+  grid-row: 7;
+  display: grid;
+  grid-template-columns: 5% 17.5% 77.5%;
+}
+
+.barra-branca-1, .barra-branca-2, .barra-branca-3, .barra-branca-4{
+  background-color: #D9D9D9;
+  height: 50%;
+  align-self: center;
+  width: 95%;
+  justify-self: start;
+}
+
+.container-logo-vivi-footer{
+  grid-row: 2;
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: 1% 98% 1%;
+  grid-template-rows: 100%;
+}
+
+.barra-branca-vertical-footer{
+  height: 100%;
+  width: 2px;
+  background-color: #D9D9D9;
+}
+
+.logo-footer{
+  align-self: center;
+  justify-self: center;
+  padding-right: 50px;
+}
+
+.logo-wexify-footer{
+  grid-row: 2;
+  grid-column: 4;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 5% 90% 5%;
+}
+
+.logo-wexify-footer img{
+  grid-row: 2;
+  grid-column: 2;
+  border-radius: 20px;
+}
+
+/* FIM FOOTER */
