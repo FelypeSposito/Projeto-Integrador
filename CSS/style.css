@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+body {
+  background-color: #ece0cb
+  }
+  
 
 .produtos-em-destaque-container{
     height: 12.5vh;
@@ -32,10 +36,6 @@
 /* CARD 1 */
 
 
-body {
-    background-color: antiquewhite;
-  }
-  
   .container-card-1 {
     height: 130vh;
     display: grid;
@@ -84,7 +84,7 @@ body {
   
   .preco-card-1 p {
     font-family: 'Inter';
-    font-size: 125%;
+    font-size: 155%;
   }
   
   .titulo-principal-card-1 {
@@ -118,6 +118,8 @@ body {
     background-color: #403924;
     border-bottom-left-radius: 20px;
   }
+
+ 
   
   .linha-topo-card-1 {
     grid-column-start: 3;
@@ -140,6 +142,11 @@ body {
     grid-template-rows: 25% 50% 25%;
     background-color: #E8E8E8;
     border-radius: 15px;
+    transition: background-color 0.5s ease;
+  }
+
+  .div-botao-carrinho-card-1:hover{
+    background-color: #bebebe;
   }
   
   .btn-adicionar-carrinho-card-1 {
@@ -148,6 +155,11 @@ body {
     border-radius: 15px;
     background-color: #403924;
     border: 0px solid;
+    transition: background-color 0.5s ease;
+  }
+
+  .btn-adicionar-carrinho-card-1:hover{
+    background-color: #262214;
   }
   
   .container-btn-categorias-card-1 {
@@ -170,6 +182,11 @@ body {
     font-family: 'Julius Sans One';
     font-size: 75%;
     font-weight: bold;
+    transition: background-color 0.5s ease;
+  }
+
+  .btn-geral-comprar-card-1:hover{
+    background-color: #cacaca;
   }
   
   
@@ -230,6 +247,11 @@ body {
   .btn-categoria-1-card-1 button {
     border-radius: 5px;
     border: none;
+    transition: background-color 2s ease;
+  }
+
+  .btn-categoria-1-card-1 button:hover{
+    background-color: #d3d3d3;
   }
   
   .btn-categoria-2-card-1 {
@@ -242,6 +264,11 @@ body {
     border: 2px solid #E8E8E8;
     background-color: #403924;
     color: #E8E8E8;
+    transition: background-color 0.5s ease;
+  }
+
+  .btn-categoria-2-card-1 button:hover{
+    background-color: #262214;
   }
   
   .btn-categoria-3-card-1 {
@@ -254,6 +281,11 @@ body {
     border: 2px solid #E8E8E8;
     background-color: #403924;
     color: #E8E8E8;
+    transition: background-color 0.5s ease;
+  }
+
+  .btn-categoria-3-card-1 button:hover{
+    background-color: #262214;
   }
   
   .container-categorias-card-1 div button {
@@ -287,7 +319,7 @@ body {
     grid-template-columns: 4% 92% 4%;
     border-radius: 10px;
   }
-  
+
   .div-titulo-descricao-card-1 {
     grid-row: 1;
     grid-column: 2;
@@ -406,6 +438,11 @@ body {
     grid-template-rows: 10% 80% 10%;
     font-family: 'Inter';
     font-size: 18px;
+    transition: background-color 2s ease;
+}
+
+.navbar:hover{
+  background-color: #252115;
 }
 
 #nav1 {
@@ -930,6 +967,7 @@ body {
   font-size: 150%;
   text-align: center;
   align-content: center;
+  transition: background-color 0.5s ease;
 }
 
 #outro1:hover {
@@ -946,10 +984,11 @@ body {
   text-align: center;
   align-content: center;
   font-size: 150%;
+  transition: background-color 0.5s ease;
 }
 
 #outro2:hover {
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(189, 189, 189);
 }
 
 #outro3 {
@@ -960,6 +999,7 @@ body {
   text-align: center;
   align-content: center;
   font-size: 170%;
+  transition: background-color 0.5s ease;
 }
 
 #outro3:hover {
@@ -974,6 +1014,7 @@ body {
   text-align: center;
   align-content: center;
   font-size: 160%;
+  transition: background-color 0.5s ease;
 }
 
 #outro4:hover {
@@ -990,6 +1031,11 @@ body {
   display: grid;
   grid-template-rows: 20% 60% 20%;
   grid-template-columns: 2.5% 40% 27.5% 27.5% 2.5%;
+  transition: background-color 2s ease;
+}
+
+.container-footer:hover{
+background-color: #262214;
 }
 
 .titulo-contatos-footer{
