@@ -16,11 +16,11 @@
 
 .titulo-contatos-footer{
     grid-column: 2;
-    align-self: center;
+    align-self: flex-end;
     justify-self: center;
     color: aliceblue;
     font-family: 'Julius Sans One';
-    font-size: 150%;
+    font-size: 170%;
 }
 
 .container-contatos-footer{
@@ -65,4 +65,40 @@
     background-color: #D9D9D9;
     height: 50%;
     align-self: center;
+    width: 95%;
+    justify-self: start;
+}
+
+.container-logo-vivi-footer{
+    grid-row: 2;
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    grid-template-rows: 100%;
+}
+
+.barra-branca-vertical-footer{
+    height: 100%;
+    width: 2px;
+    background-color: #D9D9D9;
+}
+
+.logo-footer{
+    align-self: center;
+    justify-self: center;
+    padding-right: 50px;
+}
+
+.logo-wexify-footer{
+    grid-row: 2;
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 5% 90% 5%;
+}
+
+.logo-wexify-footer img{
+    grid-row: 2;
+    grid-column: 2;
+    border-radius: 20px;
 }
