@@ -11,6 +11,7 @@ html{
     background-color: #d9cdb8;
 }
 
+
 .navbar {
     display: grid;
     background-color: #403924;
@@ -87,21 +88,6 @@ html{
   background-color: #d9cdb8;
 }
 
-.bordaEsquerda{
-    background-color: #403924a4;
-    width: 20%;
-    grid-row-start: 1;
-    grid-row-end: 22;
-}
-
-.bordaDireita{
-    background-color: #403924a4;
-    width: 20%;
-    grid-column: 7;
-    grid-row-start: 1;
-    grid-row-end: 22;
-    justify-self: end;
-}
 
 .fotoPrincipal {
   grid-column: 2;
@@ -112,6 +98,7 @@ html{
   background-size: cover;
   border: 1px solid #4039247c;
 }
+
 
 .seletorFotos {
   display: flex;
@@ -125,6 +112,11 @@ html{
 
 .seletorFotos img{
     border: 1px solid #4039247c ;
+    transition: opacity 0.5s ease;
+}
+
+.seletorFotos img:hover{
+  opacity: 50%;
 }
 
 .fotoBarra1{
@@ -176,8 +168,12 @@ html{
   grid-template-rows: 10% 11.4% 11.4% 11.4% 11.4% 11.4% 11.4% 11.4% 10%;
   background-color: #403924;
   border-radius: 2.5px;
-
   cursor: pointer;
+  transition: background .2s ease;
+}
+
+.btnComprar:hover{
+  background-color: #1b180f;
 }
 
 /* AQUI EM CIMA É A PARTE QUE FAZ O BOTAO DE COMPRA TER O CURSOR DE CLIQUE */
@@ -260,6 +256,11 @@ html{
   background-color: #403924;
   color: white;
   cursor: pointer;
+  transition: all .2s ease;
+}
+
+.botaoAdicionarCarrinho:hover{
+  background-color: #1b180f;
 }
 
 .botaoAdicionarCarrinho p {
@@ -330,7 +331,14 @@ html{
   color: #E8E8E8;
   font-family: 'Inter';
   border: none;
+  transition: background-color .2s ease;
 }
+
+
+.categoria1 button:hover{
+  background-color: #1b180f;
+}
+
 
 .categoria2 {
   grid-row: 2;
@@ -338,6 +346,8 @@ html{
   width: 100%;
   display: grid;
 }
+
+
 
 .categoria2 button {
   background-color: rgb(220, 220, 220);
@@ -348,7 +358,12 @@ html{
   background-color: #E8E8E8;
   color: #403924;
   font-family: 'Inter';
-  border: 2px solid #403924
+  border: 2px solid #403924;
+  transition: background-color 0.2s ease;
+}
+
+.categoria2 button:hover{
+  background-color: #cecece;
 }
 
 .categoria3 {
@@ -368,6 +383,11 @@ html{
   color: #403924;
   font-family: 'Inter';
   border: 2px solid #403924;
+  transition: background-color 0.2s ease;
+}
+
+.categoria3 button:hover{
+  background-color: #cecece;
 }
 
 .categoria1 button,
@@ -380,7 +400,7 @@ html{
 .caixaDescricao {
   grid-column-start: 1;
   grid-column-end: 5;
-  border: 4px solid rgba(54, 22, 22, 0.781);
+  border: 2px solid rgba(54, 22, 22, 0.781);
   border-radius: 20px;
   display: grid;
   grid-template-rows: 20% 80%;
@@ -392,6 +412,8 @@ html{
   align-self: center;
   padding-left: 5%;
   font-size: 150%;
+  font-family: 'Julius Sans One';
+  text-decoration: underline 1px;
 }
 
 .descricao {
@@ -399,7 +421,7 @@ html{
   font-size: 120%;
 }
 
-.nomeDescricao,
+
 .descricao {
   font-family: "inter";
 }
@@ -412,13 +434,13 @@ html{
   display: grid;
 
   grid-template-columns: 80% 20%;
-  border: 2px solid rgb(54, 22, 22);
 }
 .cep-input {
   width: 100%;
   height: 100%;
   border: none;
   font-size: 150%;
+  border-radius: 20px 0px 0px 20px;
 }
 .enviar {
   background-color: white;
@@ -427,6 +449,7 @@ html{
   cursor: pointer;
   border: none;
   cursor: initial;
+  border-radius: 0px 20px 20px 0px;
 }
 
 .divNaoSeiMeuCep {
@@ -448,18 +471,22 @@ html{
 
 .espacamento-entre-containers-1{
     height: 12vh;
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
   }
 
   .barra-marrom-separacao{
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 1% 10% 78% 10% 1%; 
   }
 
   .barra-marrom{
-    grid-column: 2;
-    height: 2px;
+    grid-column: 3;
+    height: 20px;
     background-color: #403924;
   }
+
+
 
 
   .container-card-2{
@@ -468,7 +495,7 @@ html{
   
   .base-card-2{
       display: grid;
-      grid-template-columns: 2.5% 17% 5.5% 72% 6.5%;
+      grid-template-columns: 2  .5% 17% 5.5% 72% 6.5%;
       grid-template-rows: 100%;
       height: 35vh;
   }
@@ -534,6 +561,10 @@ html{
       display: grid;
   }
   
+  .btnComprar{
+    border-radius: 10px;
+  }
+
   
   .btn-comprar-card-semelhante-1 {
       display: grid;
