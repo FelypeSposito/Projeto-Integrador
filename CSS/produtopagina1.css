@@ -326,9 +326,10 @@ html{
   justify-self: center;
   height: 70%;
   width: 100%;
-  border: 2px solid rgb(54, 22, 22);
-  background-image: url('../IMG/paleta1.png');
-  background-size: cover;
+  background-color: #403924;
+  color: #E8E8E8;
+  font-family: 'Inter';
+  border: none;
 }
 
 .categoria2 {
@@ -344,10 +345,10 @@ html{
   justify-self: center;
   height: 100%;
   width: 100%;
-  border: 2px solid rgb(29, 22, 54);
-  
-  background-image: url('../IMG/paleta2.png');
-  background-size: cover;
+  background-color: #E8E8E8;
+  color: #403924;
+  font-family: 'Inter';
+  border: 2px solid #403924
 }
 
 .categoria3 {
@@ -363,10 +364,10 @@ html{
   justify-self: center;
   height: 100%;
   width: 100%;
-  border: 2px solid rgb(54, 22, 22);
-  
-  background-image: url('../IMG/paleta3.png');
-  background-size: cover;
+  background-color: #E8E8E8;
+  color: #403924;
+  font-family: 'Inter';
+  border: 2px solid #403924;
 }
 
 .categoria1 button,
@@ -438,7 +439,7 @@ html{
 .botaoNaoSeiMeuCep {
   grid-column: 2;
   height: 50%;
-  font-size: 120%;
+  font-size: 100%;
   align-self: flex-end;
   border: none;
   background-color: unset;
@@ -829,7 +830,7 @@ html{
 
 
 .container-footer{
-    height: 30vh;
+    height: 35vh;
     background-color: #403924 ;
     display: grid;
     grid-template-rows: 20% 70% 10%;
