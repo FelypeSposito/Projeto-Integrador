@@ -28,7 +28,7 @@ body {
     justify-self: center;
     grid-column: 2;
     font-family: 'Julius Sans One';
-    text-shadow: 5px 5px 20px;
+    text-shadow: 5px 5px 40px;
     font-size: 150%;
 }
 
@@ -104,7 +104,7 @@ body {
     font-size: 160%;
     align-self: flex-end;
     justify-self: start;
-    text-shadow: 5px 5px 15px #403924;
+    text-shadow: 5px 5px 40px #403924;
   }
   
   
@@ -183,10 +183,12 @@ body {
     font-size: 75%;
     font-weight: bold;
     transition: background-color 0.5s ease;
+    background-color: #E8E8E8;
+    text-decoration: none;
   }
 
   .btn-geral-comprar-card-1:hover{
-    background-color: #cacaca;
+    background-color: #a0a0a0;
   }
   
   
@@ -226,8 +228,10 @@ body {
   }
   
   .letra1-card-1, .letra2-card-1, .letra3-card-1, .letra4-card-1, .letra5-card-1, .letra6-card-1, .letra7-card-1 {
-    text-decoration: none;
+    
     align-self: center;
+    justify-self: center;
+    color: #403924;
   }
   
   
@@ -247,13 +251,22 @@ body {
   .btn-categoria-1-card-1 button {
     border-radius: 5px;
     border: none;
-    transition: background-color 2s ease;
+    border: 2px solid #E8E8E8;
+    background-color: #403924;
+    color: #D9D9D9;
+    transition: background-color 0.5s ease;
   }
 
   .btn-categoria-1-card-1 button:hover{
-    background-color: #d3d3d3;
+    background-color: #262214;
   }
   
+  .btn-categoria-1-card-1 button:focus{
+    background-color: #D9D9D9;
+    color: #403924;
+    border: none;
+  }
+
   .btn-categoria-2-card-1 {
     grid-row: 4;
     grid-column: 2;
@@ -269,6 +282,12 @@ body {
 
   .btn-categoria-2-card-1 button:hover{
     background-color: #262214;
+  }
+
+  .btn-categoria-2-card-1 button:focus{
+    background-color: #D9D9D9;
+    color: #403924;
+    border: none;
   }
   
   .btn-categoria-3-card-1 {
@@ -286,6 +305,12 @@ body {
 
   .btn-categoria-3-card-1 button:hover{
     background-color: #262214;
+  }
+
+  .btn-categoria-3-card-1 button:focus{
+    background-color: #D9D9D9;
+    color: #403924;
+    border: none;
   }
   
   .container-categorias-card-1 div button {

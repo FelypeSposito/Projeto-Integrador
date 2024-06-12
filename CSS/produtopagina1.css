@@ -7,8 +7,8 @@
   padding: 0;
 }
 
-html{
-    background-color: #d9cdb8;
+body{
+  background-image: linear-gradient(to bottom right, #D9CDB8, #b3a387);
 }
 
 
@@ -85,7 +85,6 @@ html{
   display: grid;
   grid-template-columns: 5% 40% 2.5% 10% 2.5% 35% 5%;
   grid-template-rows: 10% 72.5% 5% 10% 2.5%;
-  background-color: #d9cdb8;
 }
 
 
@@ -96,7 +95,12 @@ html{
   grid-template-rows: 5% 90% 5%;
   background-image: url("../IMG/velas2.JPG");
   background-size: cover;
-  border: 1px solid #4039247c;
+  border: 2px solid #4039247c;
+  transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fotoPrincipal:hover{
+  opacity: 80%;
 }
 
 
@@ -236,6 +240,7 @@ html{
   color: white;
 }
 
+
 .divBtnAdicionarCarrinho {
   grid-row: 5;
   grid-column-start: 1;
@@ -277,7 +282,14 @@ html{
   background-color: white;
   padding: 10%;
   border-radius: 10px;
+  transition: background-color .5s ease;
 }
+
+.botaoAdicionarCarrinho img:hover{
+  background-color: #cecece;
+}
+
+
 
 .containerInformacaoProduto {
   grid-row: 2;
@@ -293,9 +305,13 @@ html{
   grid-template-rows: 30% 40% 30%;
   grid-row: 2;
   width: 95%;
-  border: 2px solid rgb(54, 22, 22);
   background-color: rgb(235, 235, 235);
   border-radius: 5px;
+  transition: background-color .5s ease;
+}
+
+.preco:hover{
+  background-color: #cecece;
 }
 
 .preco p {
@@ -327,8 +343,10 @@ html{
   justify-self: center;
   height: 70%;
   width: 100%;
-  background-color: #403924;
-  color: #E8E8E8;
+  background-color: #E8E8E8;
+  color: #403924;
+  font-family: 'Inter';
+  border: 2px solid #403924;
   font-family: 'Inter';
   border: none;
   transition: background-color .2s ease;
@@ -336,7 +354,12 @@ html{
 
 
 .categoria1 button:hover{
-  background-color: #1b180f;
+  background-color: #cecece;
+}
+
+.categoria1 button:focus{
+  background-color: #403924;
+  color: #E8E8E8;
 }
 
 
@@ -358,13 +381,18 @@ html{
   background-color: #E8E8E8;
   color: #403924;
   font-family: 'Inter';
-  border: 2px solid #403924;
+  border: none;
   transition: background-color 0.2s ease;
 }
-
 .categoria2 button:hover{
   background-color: #cecece;
 }
+
+.categoria2 button:focus{
+  background-color: #403924;
+  color: #E8E8E8;
+}
+
 
 .categoria3 {
   grid-row: 2;
@@ -382,12 +410,17 @@ html{
   background-color: #E8E8E8;
   color: #403924;
   font-family: 'Inter';
-  border: 2px solid #403924;
+  border: none;
   transition: background-color 0.2s ease;
 }
 
 .categoria3 button:hover{
   background-color: #cecece;
+}
+
+.categoria3 button:focus{
+  background-color: #403924;
+  color: #E8E8E8;
 }
 
 .categoria1 button,
@@ -442,6 +475,10 @@ html{
   font-size: 150%;
   border-radius: 20px 0px 0px 20px;
 }
+.cep-input:focus{
+  border: none;
+}
+
 .enviar {
   background-color: white;
   font-size: 125%;
@@ -482,7 +519,7 @@ html{
 
   .barra-marrom{
     grid-column: 3;
-    height: 20px;
+    height: 2px;
     background-color: #403924;
   }
 
@@ -495,7 +532,7 @@ html{
   
   .base-card-2{
       display: grid;
-      grid-template-columns: 2  .5% 17% 5.5% 72% 6.5%;
+      grid-template-columns: 2.5% 17% 5.5% 72% 6.5%;
       grid-template-rows: 100%;
       height: 35vh;
   }
@@ -511,11 +548,16 @@ html{
       border: 2px solid;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
+      transition: opacity 1s ease;
   }
   
   .container-fotos-card-2 img{
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
+  }
+
+  .container-fotos-card-2:hover{
+    opacity: 90%;
   }
   
   .fundo-preco-card-2{
@@ -572,6 +614,15 @@ html{
       grid-template-rows: 5% 90% 5%;
       background-color: #403924;
     }
+
+    .btn-comprar-card-semelhante-1 a{
+      background-color: #E8E8E8;
+      transition: background-color 0.5s ease;
+    }
+
+    .btn-comprar-card-semelhante-1 a:hover{
+      background-color: #bebebe;
+    }
     
     .letra1-card-semelhante-1 {
       grid-row: 2;
@@ -602,8 +653,9 @@ html{
     }
     
     .letra1-card-semelhante-1, .letra2-card-semelhante-1, .letra3-card-semelhante-1, .letra4-card-semelhante-1, .letra5-card-semelhante-1, .letra6-card-semelhante-1, .letra7-card-semelhante-1 {
-      text-decoration: none;
       align-self: center;
+      color:  #403924;
+      justify-self: center;
     }
     
   
@@ -628,9 +680,18 @@ html{
       height: 100%;
       width: 100%;
       border-radius: 5px;
-      border: none;
+      border: 2px solid #E8E8E8;
+      color: #E8E8E8;
+      background-color: #403924;
+      transition: all 0.5s ease;
+    }
+
+    .categoria-1-card-semelhante-1 button:focus{
+      background-color: #E8E8E8;
       color: #403924;
     }
+
+
   
     .categoria-2-card-semelhante-1{
       grid-row: 4;
@@ -643,8 +704,14 @@ html{
       border: 2px solid #E8E8E8;
       background-color: #403924;
       color: #E8E8E8;
+      transition: all 0.5s ease;
     }
   
+    .categoria-2-card-semelhante-1 button:focus{
+      background-color: #E8E8E8;
+      color: #403924;
+    }
+
     .categoria-3-card-semelhante-1{
       grid-row: 6;
     }
@@ -656,6 +723,12 @@ html{
       border: 2px solid #E8E8E8;
       background-color: #403924;
       color: #E8E8E8;
+      transition: all 0.5s ease;
+    }
+    
+    .categoria-3-card-semelhante-1 button:focus{
+      background-color: #E8E8E8;
+      color: #403924;
     }
   
     .botao-carrinho-card-semelhante-1{
@@ -854,6 +927,7 @@ html{
     font-family: 'Julius Sans One';
     border-radius: 20px;
     border: none;
+    display: grid;
 }
 
 
@@ -959,3 +1033,10 @@ html{
   
   /* FIM FOOTER */
   
+
+  .voltar-topo-btn{
+    align-self: center;
+    justify-self: center;
+    font-family: 'Julius Sans One';
+    color: #E8E8E8;
+  }
