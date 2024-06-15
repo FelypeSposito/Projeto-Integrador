@@ -1157,6 +1157,11 @@ transition: background-color 1s ease;
 
 }
 
+.navbar span{
+  background-color: #E8E8E8;
+}
+
+
 
 .navbar:hover{
 background-color: #262214;
@@ -1171,7 +1176,7 @@ background-color: #262214;
 }
 
 .navbar-links a {
-  color: #a0a0a0; /* cor dos links */
+  color: #E8E8E8; /* cor dos links */
   text-decoration: none;
   padding: 0 15px;
   display: flex;
@@ -1181,7 +1186,7 @@ background-color: #262214;
 }
 
 .navbar-links a:hover {
-  color: white; /* cor ao passar o mouse */
+  color: #47412d; /* cor ao passar o mouse */
 }
 
 .menu-toggle {
@@ -1255,15 +1260,15 @@ background-color: #262214;
     position: absolute;
     top: 12vh;
     left: 0;
-    background-color: #E8E8E8; /* fundo branco para o menu toggle */
+    background-color: #403924; /* fundo branco para o menu toggle */
     width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 2; /* garantir que esteja acima do conteúdo */
     transition: background-color 2s ease;
-    transition: all 2s ease;
+    transition: all .7s ease;
   }
   .navbar-links:hover{
-    background-color: #c2c2c2;
+    background-color: #262214;
   }
   
 
@@ -1315,3 +1320,5 @@ background-color: #262214;
     text-align: center; /* centralizar texto */
   }
 }
+/* fim navbar */
+
