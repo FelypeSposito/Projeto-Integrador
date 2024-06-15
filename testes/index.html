@@ -1,38 +1,700 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navbar Responsiva</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="navbar">
-  <div class="logo">
-    <img src="logo.png" alt="Logo">
+
+
+  <div class="navbar" id="topo-total">
+    <div class="logo">
+      <img src="../IMG/Logovivi-branca.png" width="150px" height="150px" alt="Logo">
+    </div>
+    <div class="navbar-links">
+      <a href="../index.html">Início</a>
+      <a href="HTML/produto1.html">Velas</a>
+      <a href="#">Quem Somos</a>
+      <a href="#contatos">Contato</a>
+    </div>
+    <div class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </div>
-  <div class="navbar-links">
-    <a href="#">Início</a>
-    <a href="#">Velas</a>
-    <a href="#">Quem Somos</a>
-    <a href="#">Contato</a>
+  
+  <div class="navbar-dropdown">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Velas</a></li>
+      <li><a href="#">Quem Somos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
   </div>
-  <div class="menu-toggle">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
+  
+
+
+    <div class="container1">
+
+
+        <div class="fotoPrincipal"></div>
+
+        <div class="seletorFotos">
+            <div><button class="fotoBarra1"><img src="../../IMG/velas1.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra2"><img src="../../IMG/velas2.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra3"><img src="../../IMG/velas3.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra4"><img src="../../IMG/velas4.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra5"><img src="../../IMG/velas5.JPG" height="100%" width="100%" alt=""></button></div>
+
+        </div>
+
+       <div class="btn1"><button class="btnComprar">
+
+        <a href="" class="letra1">C</a>
+        <a href="" class="letra2">O</a>
+        <a href="" class="letra3">M</a>
+        <a href="" class="letra4">P</a>
+        <a href="" class="letra5">R</a>
+        <a href="" class="letra6">A</a>
+        <a href="" class="letra7">R</a>
+
+  </button>
+     </div>
+
+
+     <div id="divBtnAdicionarCarrinho">
+        <button id="botaoAdicionarCarrinho"><p>Adicionar ao Carrinho</p> <img src="../IMG/adicionar-ao-carrinho-de-compras-preto.png" height="40vh" width="40vw" 
+            alt=""></button>
+
+       </div>
+
+       <div class="containerInformacaoProduto">
+
+        <div class="preco"><p>R$59,99</p></div>
+        <div class="categoria1"><button>Preto</button></div>
+        <div class="categoria2"><button>Branco</button></div>
+        <div class="categoria3"><button>Marrom</button></div>
+    
+        <!-- <div id="caixaDescricao">
+            <p id="nomeDescricao">Kit Velas de Coco</p>
+            <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus quidem obcaecati debitis repellendus earum veritatis odio dolorum error consectetur? Officiis facilis vel totam quisquam aliquid! Laborum veniam ratione quisquam eos natus id impedit ut maiores neque, perferendis consectetur amet cumque provident assumenda rem. Magnam numquam sed vo</p>
+        </div> -->
+
+        <div class="caixaDescricao">
+            <p class="nomeDescricao">Kit Velas de Coco</p>
+            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus quidem obcaecati debitis repellendus earum veritatis odio dolorum error consectetur? Officiis facilis vel totam quisquam aliquid! Laborum veniam ratione quisquam eos natus id impedit ut maiores neque, perferendis consectetur amet cumque provident assumenda rem. Magnam numquam sed vo</p>
+        </div>
+
+        
+        <div class="divBtnAdicionarCarrinho">
+
+
+            <button class="botaoAdicionarCarrinho"><p>Adicionar ao Carrinho</p> <img src="../IMG/adicionar-ao-carrinho-de-compras-preto.png" height="40vh" width="40vw" 
+                alt=""></button>
+    
+           </div>
+
+       </div>
+
+       <div class="cep-container">
+        <input type="text" id="cep" name="cep" class="cep-input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="    Insira Seu CEP. (EX:04682-010)" required>
+        <button class="enviar">Calcular</button>
+      </div>
+
+      <div id="divNaoSeiMeuCep">
+        <button id="botaoNaoSeiMeuCep">Não sei meu Cep</button>
   </div>
+      
+      <div id="cep-container">
+        <input type="text" id="cep" name="cep" id="cep-input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="    Insira Seu CEP. (EX:04682-010)" required>
+        <button id="enviar">Calcular</button>
+      </div>
+
+      <div id="caixaDescricao">
+        <p id="nomeDescricao">Kit Velas de Coco</p>
+        <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus quidem obcaecati debitis repellendus earum veritatis odio dolorum error consectetur? Officiis facilis vel totam quisquam aliquid! Laborum veniam ratione quisquam eos natus id impedit ut maiores neque, perferendis consectetur amet cumque provident assumenda rem. Magnam numquam sed vo</p>
+    </div>
+
+      <div class="divNaoSeiMeuCep">
+      <button class="botaoNaoSeiMeuCep">Não sei meu Cep</button>
 </div>
 
-<div class="navbar-dropdown">
-  <ul>
-    <li><a href="#">Início</a></li>
-    <li><a href="#">Velas</a></li>
-    <li><a href="#">Quem Somos</a></li>
-    <li><a href="#">Contato</a></li>
-  </ul>
+<!-- ESCONDIDOS PARA RESPONSIVIDADE -->
+
+<div class="barra-superior-foto">
+    <div id="preco"><p>R$59,99</p></div>
+    <div id="categoria1"><button>Preto</button></div>
+    <div id="categoria2"><button>Branco</button></div>
+    <div id="categoria3"><button>Marrom</button></div>
 </div>
 
-<script src="script.js"></script>
+    </div>
+
+
+ <div class="espacamento-entre-containers-1">
+  <div class="borda-verde"></div>
+  <div class="fundo-vazio"></div>
+  <div class="borda-verde"></div>
+    </div>
+    <div class="barra-marrom-separacao">
+
+      <div class="borda-verde"></div>
+        <div class="barra-marrom">
+        </div>
+        <div class="fundo-vazio"></div>
+        <div class="borda-verde"></div>
+
+    </div>
+    <div class="espacamento-entre-containers-1">
+      <div class="borda-verde"></div>
+      <div class="fundo-vazio"></div>
+      <div class="borda-verde"></div>
+
+    </div>
+
+<!-- INICIO CARDS' -->
+
+<div class="container-card-2">
+    <div class="base-card-2">
+      <div class="container-fotos-card-2">
+        <img src="../../IMG/velas5.JPG" height="100%" width="100%" alt="">
+        <div class="fundo-preco-card-2">
+            <p>R$59,99</p>
+        </div>
+      </div>
+    
+      <div class="container-direito-card-2">
+        
+    <div class="botao-comprar-card-semelhante-1">
+      <div class="btn-comprar-card-semelhante-1"><a class="btn-geral-comprar-card-semelhante-1">
+    
+        <p href="" class="letra1-card-semelhante-1">C</p>
+        <p href="" class="letra2-card-semelhante-1">O</p>
+        <p href="" class="letra3-card-semelhante-1">M</p>
+        <p href="" class="letra4-card-semelhante-1">P</p>
+        <p href="" class="letra5-card-semelhante-1">R</p>
+        <p href="" class="letra6-card-semelhante-1">A</p>
+        <p href="" class="letra7-card-semelhante-1">R</p>
+    
+      </a>
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="gap"></div>
+    
+    <!-- FIM DO PRIMEIRO CONTAINER DIREITO -->
+    <!-- INICIO CONTAINER CATEGORIAS/BOTAO -->
+    
+    <div class="container-categorias-botao-card-semelhante-1">
+      <div class="categorias-botao-card-semelhante-1">
+        <div class="categoria-1-card-semelhante-1">
+          <button>Vanilla Black</button>
+        </div>
+      
+        <div class="categoria-2-card-semelhante-1">
+          <button>
+            Verbena Branca
+          </button>
+        </div>
+      
+        <div class="categoria-3-card-semelhante-1">
+          <button>
+            Cereja e Avelã
+          </button>
+        </div>
+      
+      </div>
+      <!-- fim botoes de categoria -->
+      
+      <!-- BOTAO CARRINHO -->
+      <div class="container-btn-adicionar-carrinho-card-1">
+      
+        <div class="div-botao-carrinho-card-1">
+            <button class="btn-adicionar-carrinho-card-1">
+                <img src="../../IMG/adicionar-ao-carrinho-de-compras.png" height="60%" width="50%" alt="">
+            </button>
+      
+        </div>
+      
+      </div>
+    
+      </div>
+      <!-- FIM CONTAINER CATEGORIAS/BOTAO -->
+      <div class="gap2"></div>
+      <!-- FIM BOTAO CARRINHO -->
+      
+      <!-- INICIO CONTAINER PRODUTO -->
+      <div class="container-descricao-produto-card-semelhante-1">
+    
+        <div class="subcontainer-card-semelhante-1">
+          <p class="titulo-subcontainer-card-semelhante-1">
+            Velas Aromáticas Massageadoras
+          </p>
+          <div class="subsubcontainer-card-semelhante-1">
+            <p class="descricao-card-semelhante-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magni ad tempore voluptates quas quia reprehenderit numquam similique consequuntur aperiam. Voluptatibus laboriosam distinctio quis dolor ea labore fuga illum incidunt?</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="gap3"></div>
+      
+      </div>
+    <!-- INICIO CONTAINER PRODUTO -->
+    
+    </div>
+    
+    
+    </div>
+        </div>
+        <!-- fim cards -->
+        <div class="barra-marrom-separacao">
+            <div class="barra-marrom">
+        
+            </div>
+        </div>
+        <div class="espacamento-entre-containers-1">
+        </div>
+    
+
+        <!-- INICIO CARDS' -->
+
+<div class="container-card-2">
+    <div class="base-card-2">
+      <div class="container-fotos-card-2">
+        <img src="../../IMG/velas5.JPG" height="100%" width="100%" alt="">
+        <div class="fundo-preco-card-2">
+            <p>R$59,99</p>
+        </div>
+      </div>
+    
+      <div class="container-direito-card-2">
+        
+    <div class="botao-comprar-card-semelhante-1">
+      <div class="btn-comprar-card-semelhante-1"><a href="#topo-total" class="btn-geral-comprar-card-semelhante-1">
+    
+        <p href="" class="letra1-card-semelhante-1">C</p>
+        <p href="" class="letra2-card-semelhante-1">O</p>
+        <p href="" class="letra3-card-semelhante-1">M</p>
+        <p href="" class="letra4-card-semelhante-1">P</p>
+        <p href="" class="letra5-card-semelhante-1">R</p>
+        <p href="" class="letra6-card-semelhante-1">A</p>
+        <p href="" class="letra7-card-semelhante-1">R</p>
+    
+      </a>
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="gap"></div>
+    
+    <!-- FIM DO PRIMEIRO CONTAINER DIREITO -->
+    <!-- INICIO CONTAINER CATEGORIAS/BOTAO -->
+    
+    <div class="container-categorias-botao-card-semelhante-1">
+      <div class="categorias-botao-card-semelhante-1">
+        <div class="categoria-1-card-semelhante-1">
+          <button>Vanilla Black</button>
+        </div>
+      
+        <div class="categoria-2-card-semelhante-1">
+          <button>
+            Verbena Branca
+          </button>
+        </div>
+      
+        <div class="categoria-3-card-semelhante-1">
+          <button>
+            Cereja e Avelã
+          </button>
+        </div>
+      
+      </div>
+      <!-- fim botoes de categoria -->
+      
+      <!-- BOTAO CARRINHO -->
+      <div class="container-btn-adicionar-carrinho-card-1">
+      
+        <div class="div-botao-carrinho-card-1">
+            <button class="btn-adicionar-carrinho-card-1">
+                <img src="../../IMG/adicionar-ao-carrinho-de-compras.png" height="60%" width="50%" alt="">
+            </button>
+      
+        </div>
+      
+      </div>
+    
+      </div>
+      <!-- FIM CONTAINER CATEGORIAS/BOTAO -->
+      <div class="gap2"></div>
+      <!-- FIM BOTAO CARRINHO -->
+      
+      <!-- INICIO CONTAINER PRODUTO -->
+      <div class="container-descricao-produto-card-semelhante-1">
+    
+        <div class="subcontainer-card-semelhante-1">
+          <p class="titulo-subcontainer-card-semelhante-1">
+            Velas Aromáticas Massageadoras
+          </p>
+          <div class="subsubcontainer-card-semelhante-1">
+            <p class="descricao-card-semelhante-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magni ad tempore voluptates quas quia reprehenderit numquam similique consequuntur aperiam. Voluptatibus laboriosam distinctio quis dolor ea labore fuga illum incidunt?</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="gap3"></div>
+      
+      </div>
+    <!-- INICIO CONTAINER PRODUTO -->
+    
+    </div>
+    
+    
+    </div>
+        </div>
+        <!-- fim cards -->
+
+        <div class="barra-marrom-separacao">
+            <div class="barra-marrom">
+        
+            </div>
+        </div>
+        <div class="espacamento-entre-containers-1">
+        </div>
+    
+        <!-- INICIO CARDS' -->
+
+<div class="container-card-2">
+    <div class="base-card-2">
+      <div class="container-fotos-card-2">
+        <img src="../../IMG/velas5.JPG" height="100%" width="100%" alt="">
+        <div class="fundo-preco-card-2">
+            <p>R$59,99</p>
+        </div>
+      </div>
+    
+      <div class="container-direito-card-2">
+        
+    <div class="botao-comprar-card-semelhante-1">
+      <div class="btn-comprar-card-semelhante-1"><a class="btn-geral-comprar-card-semelhante-1">
+    
+        <p href="" class="letra1-card-semelhante-1">C</p>
+        <p href="" class="letra2-card-semelhante-1">O</p>
+        <p href="" class="letra3-card-semelhante-1">M</p>
+        <p href="" class="letra4-card-semelhante-1">P</p>
+        <p href="" class="letra5-card-semelhante-1">R</p>
+        <p href="" class="letra6-card-semelhante-1">A</p>
+        <p href="" class="letra7-card-semelhante-1">R</p>
+    
+      </a>
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="gap"></div>
+    
+    <!-- FIM DO PRIMEIRO CONTAINER DIREITO -->
+    <!-- INICIO CONTAINER CATEGORIAS/BOTAO -->
+    
+    <div class="container-categorias-botao-card-semelhante-1">
+      <div class="categorias-botao-card-semelhante-1">
+        <div class="categoria-1-card-semelhante-1">
+          <button>Vanilla Black</button>
+        </div>
+      
+        <div class="categoria-2-card-semelhante-1">
+          <button>
+            Verbena Branca
+          </button>
+        </div>
+      
+        <div class="categoria-3-card-semelhante-1">
+          <button>
+            Cereja e Avelã
+          </button>
+        </div>
+      
+      </div>
+      <!-- fim botoes de categoria -->
+      
+      <!-- BOTAO CARRINHO -->
+      <div class="container-btn-adicionar-carrinho-card-1">
+      
+        <div class="div-botao-carrinho-card-1">
+            <button class="btn-adicionar-carrinho-card-1">
+                <img src="../../IMG/adicionar-ao-carrinho-de-compras.png" height="60%" width="50%" alt="">
+            </button>
+      
+        </div>
+      
+      </div>
+    
+      </div>
+      <!-- FIM CONTAINER CATEGORIAS/BOTAO -->
+      <div class="gap2"></div>
+      <!-- FIM BOTAO CARRINHO -->
+      
+      <!-- INICIO CONTAINER PRODUTO -->
+      <div class="container-descricao-produto-card-semelhante-1">
+    
+        <div class="subcontainer-card-semelhante-1">
+          <p class="titulo-subcontainer-card-semelhante-1">
+            Velas Aromáticas Massageadoras
+          </p>
+          <div class="subsubcontainer-card-semelhante-1">
+            <p class="descricao-card-semelhante-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magni ad tempore voluptates quas quia reprehenderit numquam similique consequuntur aperiam. Voluptatibus laboriosam distinctio quis dolor ea labore fuga illum incidunt?</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="gap3"></div>
+      
+      </div>
+    <!-- INICIO CONTAINER PRODUTO -->
+    
+    </div>
+    
+    
+    </div>
+        </div>
+        <!-- fim cards -->
+
+        <div class="barra-marrom-separacao">
+            <div class="barra-marrom">
+        
+            </div>
+        </div>
+        <div class="espacamento-entre-containers-1">
+        </div>
+    
+        <!-- INICIO CARDS' -->
+
+<div class="container-card-2">
+    <div class="base-card-2">
+      <div class="container-fotos-card-2">
+        <img src="../../IMG/velas5.JPG" height="100%" width="100%" alt="">
+        <div class="fundo-preco-card-2">
+            <p>R$59,99</p>
+        </div>
+      </div>
+    
+      <div class="container-direito-card-2">
+        
+    <div class="botao-comprar-card-semelhante-1">
+      <div class="btn-comprar-card-semelhante-1"><a class="btn-geral-comprar-card-semelhante-1">
+    
+        <p href="" class="letra1-card-semelhante-1">C</p>
+        <p href="" class="letra2-card-semelhante-1">O</p>
+        <p href="" class="letra3-card-semelhante-1">M</p>
+        <p href="" class="letra4-card-semelhante-1">P</p>
+        <p href="" class="letra5-card-semelhante-1">R</p>
+        <p href="" class="letra6-card-semelhante-1">A</p>
+        <p href="" class="letra7-card-semelhante-1">R</p>
+    
+      </a>
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="gap"></div>
+    
+    <!-- FIM DO PRIMEIRO CONTAINER DIREITO -->
+    <!-- INICIO CONTAINER CATEGORIAS/BOTAO -->
+    
+    <div class="container-categorias-botao-card-semelhante-1">
+      <div class="categorias-botao-card-semelhante-1">
+        <div class="categoria-1-card-semelhante-1">
+          <button>Vanilla Black</button>
+        </div>
+      
+        <div class="categoria-2-card-semelhante-1">
+          <button>
+            Verbena Branca
+          </button>
+        </div>
+      
+        <div class="categoria-3-card-semelhante-1">
+          <button>
+            Cereja e Avelã
+          </button>
+        </div>
+      
+      </div>
+      <!-- fim botoes de categoria -->
+      
+      <!-- BOTAO CARRINHO -->
+      <div class="container-btn-adicionar-carrinho-card-1">
+      
+        <div class="div-botao-carrinho-card-1">
+            <button class="btn-adicionar-carrinho-card-1">
+                <img src="../../IMG/adicionar-ao-carrinho-de-compras.png" height="60%" width="50%" alt="">
+            </button>
+      
+        </div>
+      
+      </div>
+    
+      </div>
+      <!-- FIM CONTAINER CATEGORIAS/BOTAO -->
+      <div class="gap2"></div>
+      <!-- FIM BOTAO CARRINHO -->
+      
+      <!-- INICIO CONTAINER PRODUTO -->
+      <div class="container-descricao-produto-card-semelhante-1">
+    
+        <div class="subcontainer-card-semelhante-1">
+          <p class="titulo-subcontainer-card-semelhante-1">
+            Velas Aromáticas Massageadoras
+          </p>
+          <div class="subsubcontainer-card-semelhante-1">
+            <p class="descricao-card-semelhante-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magni ad tempore voluptates quas quia reprehenderit numquam similique consequuntur aperiam. Voluptatibus laboriosam distinctio quis dolor ea labore fuga illum incidunt?</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="gap3"></div>
+      
+      </div>
+    <!-- INICIO CONTAINER PRODUTO -->
+    
+    </div>
+    
+    
+    </div>
+        </div>
+        <!-- fim cards -->
+        <div class="barra-marrom-separacao">
+            <div class="barra-marrom">
+        
+            </div>
+        </div>
+        <div class="espacamento-entre-containers-1">
+        </div>
+    
+        
+    <!-- 
+        Opiniões dos Clientes 
+    -->
+    <div class="opinioes">
+        <a href="" id="caixa1">
+            <div class="foto-opiniao">
+                <div id="icone-opiniao">Lorem.
+                    <div class="nome-opiniao">
+                        <p>Eliane Cabanez</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="texto-opiniao">
+                <p id="header-opiniao">VELAS MASSAGEADORAS</p>
+                <hr id="linha-opiniao">
+                <p id="p-opiniao">"Bom dia! 
+
+                  Minhas compras chegaram no prazo, os refis chegaram um pouco amassado, mas tudo certo. 
+                  
+                  Comprei vanila e pedi, refil da cereja. E acabei gostando mais da que veio de brinde. Verbena 😍. Todas são ótimas. Mais verbena é maravilhosa 🤩"</p>
+            </div>
+        </a>
+
+        <a href="" id="caixa2">
+            <div class="foto-opiniao">
+                <div id="icone-opiniao">Lorem.
+                    <div class="nome-opiniao">
+                        <p>Eduardo Sanchez</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="texto-opiniao">
+                <p id="header-opiniao">VELAS MASSAGEADORAS</p>
+                <hr id="linha-opiniao">
+                <p id="p-opiniao">"Oi eu comprei pra presente, minha mulher e minha mãe. Elas adoraram, me surpreendi. Elas disseram que foi o presente mais criativo que já dei. As velas são muito cheirosas, e a embalagem com a ideia de reutilizar foi muito legal. Mas o que mais gostei foi a mensagem que aparece um tempo depois de queimar a vela. Muito legal mesmo. Com certeza irei comprar de novo."</p>
+            </div>
+        </a>
+
+        <a href="" id="caixa3">
+            <div class="foto-opiniao">
+                <div id="icone-opiniao">Lorem.
+                    <div class="nome-opiniao" style="width: 180%; margin-left: 200%;">
+                        <p>Edilangela Gomes</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="texto-opiniao">
+                <p id="header-opiniao">VELAS MASSAGEADORAS</p>
+                <hr id="linha-opiniao">
+                <p id="p-opiniao">"Eu adorei as velas Vivi, são lindas e muito cheirosas minha casa ficou super perfumada. E eu usei também como massagem. Nossa minha pele ficou macia e muito cheirosas. Em breve vou testar outras fragâncias. Ahh e estava muito bem embalado parabéns."</p>
+            </div>
+        </a>
+
+        <div class="voltar-topo-fim"><a class="voltar-topo-btn" href="#topo-total">Voltar ao Topo</a></div>
+
+    </div>
+
+       <!-- INICIO CONTAINER DO FOOTER -->
+       <div class="container-footer">
+        <p class="titulo-contatos-footer">Contatos</p>
+<div class="container-contatos-footer">
+
+
+<div class="linha-1-footer">
+    <img src="../IMG/icone-email.png" height="70%" width="100%" alt="">
+    <p>Email</p>
+    <div class="barra-branca-1"></div>
+</div>
+
+<div class="linha-2-footer">
+    <img src="../IMG/icone-telefone.png" height="70%" width="100%" alt="">
+    <p>Telefone</p>
+    <div class="barra-branca-2"></div>
+</div>
+
+<div class="linha-3-footer">
+    <img src="../IMG/whatsapp-icone.png" height="70%" width="100%" alt="">
+    <p>Whatsapp</p>
+    <div class="barra-branca-3"></div>
+</div>
+
+<div class="linha-4-footer">
+    <img src="../IMG/icone-instagram.png" height="70%" width="100%" alt="">
+    <p>Instagram</p>
+    <div class="barra-branca-4"></div>
+</div>
+
+
+
+</div>
+
+<div class="container-logo-vivi-footer">
+    <div class="barra-branca-vertical-footer"></div>
+    <div class="logo-footer"><img src="../IMG/Logovivi-branca.png" width="100%" height="100%" alt=""></div>
+    <div class="barra-branca-vertical-footer"></div>
+</div>
+
+<div class="logo-wexify-footer"><img src="" alt=""></div>
+
+<div class="logo-wexify-footer">
+    <img src="../IMG/logo-wexify.png" height="100%" width="100%" alt="">
+</div>
+
+    </div>
+
+<script src="../JS/produtos.js"></script>
 </body>
 </html>
+

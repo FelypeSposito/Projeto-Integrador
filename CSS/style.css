@@ -41,6 +41,7 @@ body {
     display: grid;
   }
   
+  
   /* .card-1{
       height: 40vh;
       display: grid;
@@ -1146,7 +1147,7 @@ background-color: #262214;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #E8E8E8; /* fundo branco para a navbar */
+  background-color: #403924; /* fundo branco para a navbar */
   padding: 0 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   position: relative; /* para posicionar o dropdown absoluto */
@@ -1157,9 +1158,14 @@ transition: background-color 1s ease;
 
 }
 
+.navbar span{
+  background-color: #E8E8E8;
+}
+
+
 
 .navbar:hover{
-background-color: #c2c2c2;
+background-color: #262214;
 }
 
 .logo img {
@@ -1171,7 +1177,7 @@ background-color: #c2c2c2;
 }
 
 .navbar-links a {
-  color: #333; /* cor dos links */
+  color: #E8E8E8; /* cor dos links */
   text-decoration: none;
   padding: 0 15px;
   display: flex;
@@ -1181,7 +1187,7 @@ background-color: #c2c2c2;
 }
 
 .navbar-links a:hover {
-  color: white; /* cor ao passar o mouse */
+  color: #47412d; /* cor ao passar o mouse */
 }
 
 .menu-toggle {
@@ -1255,15 +1261,15 @@ background-color: #c2c2c2;
     position: absolute;
     top: 12vh;
     left: 0;
-    background-color: #E8E8E8; /* fundo branco para o menu toggle */
+    background-color: #403924; /* fundo branco para o menu toggle */
     width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 2; /* garantir que esteja acima do conteúdo */
     transition: background-color 2s ease;
-    transition: all 2s ease;
+    transition: all .7s ease;
   }
   .navbar-links:hover{
-    background-color: #c2c2c2;
+    background-color: #262214;
   }
   
 

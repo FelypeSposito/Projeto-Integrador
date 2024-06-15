@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/produtopagina1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -43,11 +43,11 @@
         <div class="fotoPrincipal"></div>
 
         <div class="seletorFotos">
-            <div><button class="fotoBarra1"><img src="../../IMG/velas1.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div><button class="fotoBarra2"><img src="../../IMG/velas2.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div><button class="fotoBarra3"><img src="../../IMG/velas3.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div><button class="fotoBarra4"><img src="../../IMG/velas4.JPG" height="100vh" width="100vw" alt=""></button></div>
-            <div><button class="fotoBarra5"><img src="../../IMG/velas5.JPG" height="100vh" width="100vw" alt=""></button></div>
+            <div><button class="fotoBarra1"><img src="../../IMG/velas1.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra2"><img src="../../IMG/velas2.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra3"><img src="../../IMG/velas3.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra4"><img src="../../IMG/velas4.JPG" height="100%" width="100%" alt=""></button></div>
+            <div><button class="fotoBarra5"><img src="../../IMG/velas5.JPG" height="100%" width="100%" alt=""></button></div>
 
         </div>
 
@@ -65,6 +65,12 @@
      </div>
 
 
+     <div id="divBtnAdicionarCarrinho">
+        <button id="botaoAdicionarCarrinho"><p>Adicionar ao Carrinho</p> <img src="../IMG/adicionar-ao-carrinho-de-compras-preto.png" height="40vh" width="40vw" 
+            alt=""></button>
+
+       </div>
+
        <div class="containerInformacaoProduto">
 
         <div class="preco"><p>R$59,99</p></div>
@@ -72,7 +78,10 @@
         <div class="categoria2"><button>Branco</button></div>
         <div class="categoria3"><button>Marrom</button></div>
     
-
+        <!-- <div id="caixaDescricao">
+            <p id="nomeDescricao">Kit Velas de Coco</p>
+            <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus quidem obcaecati debitis repellendus earum veritatis odio dolorum error consectetur? Officiis facilis vel totam quisquam aliquid! Laborum veniam ratione quisquam eos natus id impedit ut maiores neque, perferendis consectetur amet cumque provident assumenda rem. Magnam numquam sed vo</p>
+        </div> -->
 
         <div class="caixaDescricao">
             <p class="nomeDescricao">Kit Velas de Coco</p>
@@ -80,24 +89,48 @@
         </div>
 
         
-       <div class="divBtnAdicionarCarrinho">
+        <div class="divBtnAdicionarCarrinho">
 
 
-        <button class="botaoAdicionarCarrinho"><p>Adicionar ao Carrinho</p> <img src="../IMG/adicionar-ao-carrinho-de-compras-preto.png" height="40vh" width="40vw" 
-            alt=""></button>
+            <button class="botaoAdicionarCarrinho"><p>Adicionar ao Carrinho</p> <img src="../IMG/adicionar-ao-carrinho-de-compras-preto.png" height="40vh" width="40vw" 
+                alt=""></button>
+    
+           </div>
 
        </div>
 
-       </div>
-
-       <div class="cep-container">
-        <input type="text" id="cep" name="cep" class="cep-input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="    Insira Seu CEP. (EX:04682-010)" required>
+       <div class="cep1-container">
+        <input type="text" id="cep1" name="cep1" class="cep1-input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="    Insira Seu CEP. (EX:04682-010)" required>
         <button class="enviar">Calcular</button>
       </div>
+
+      <div id="divNaoSeiMeuCep">
+        <button id="botaoNaoSeiMeuCep">Não sei meu Cep</button>
+  </div>
+      
+      <div id="cep-container">
+        <input type="text" id="cep" name="cep" id="cep-input" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="    Insira Seu CEP. (EX:04682-010)" required>
+        <button id="enviar">Calcular</button>
+      </div>
+
+      <div id="caixaDescricao">
+        <p id="nomeDescricao">Kit Velas de Coco</p>
+        <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus quidem obcaecati debitis repellendus earum veritatis odio dolorum error consectetur? Officiis facilis vel totam quisquam aliquid! Laborum veniam ratione quisquam eos natus id impedit ut maiores neque, perferendis consectetur amet cumque provident assumenda rem. Magnam numquam sed vo</p>
+    </div>
 
       <div class="divNaoSeiMeuCep">
       <button class="botaoNaoSeiMeuCep">Não sei meu Cep</button>
 </div>
+
+<!-- ESCONDIDOS PARA RESPONSIVIDADE -->
+
+<div class="barra-superior-foto">
+    <div id="preco"><p>R$59,99</p></div>
+    <div id="categoria1"><button>Preto</button></div>
+    <div id="categoria2"><button>Branco</button></div>
+    <div id="categoria3"><button>Marrom</button></div>
+</div>
+
     </div>
 
 
@@ -119,6 +152,7 @@
       <div class="borda-verde"></div>
       <div class="fundo-vazio"></div>
       <div class="borda-verde"></div>
+
     </div>
 
 <!-- INICIO CARDS' -->
