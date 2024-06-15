@@ -1146,7 +1146,7 @@ background-color: #262214;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #E8E8E8; /* fundo branco para a navbar */
+  background-color: #403924; /* fundo branco para a navbar */
   padding: 0 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   position: relative; /* para posicionar o dropdown absoluto */
@@ -1159,7 +1159,7 @@ transition: background-color 1s ease;
 
 
 .navbar:hover{
-background-color: #c2c2c2;
+background-color: #262214;
 }
 
 .logo img {
@@ -1171,7 +1171,7 @@ background-color: #c2c2c2;
 }
 
 .navbar-links a {
-  color: #333; /* cor dos links */
+  color: #a0a0a0; /* cor dos links */
   text-decoration: none;
   padding: 0 15px;
   display: flex;
