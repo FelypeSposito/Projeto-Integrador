@@ -28,8 +28,8 @@ function showSlides(n) {
 } 
 
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navbarLinks = document.querySelector('.navbar-links');
+let menuToggle = document.querySelector('.menu-toggle');
+let navbarLinks = document.querySelector('.navbar-links');
 
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
