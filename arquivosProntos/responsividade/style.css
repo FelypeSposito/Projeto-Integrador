@@ -1927,7 +1927,7 @@ background-color: #262214;
       }
 
       .logo-wexify-footer{
-        grid-template-rows: 30% 40% 30%;
+        grid-template-rows: 10% 80% 10%;
       }
 
       .logo-wexify-footer img{
@@ -2035,6 +2035,11 @@ background-color: #262214;
 #caixa3{
   margin-bottom: 20vh;
 }
+
+.texto-opiniaoAlt{
+  height: 50vh;
+}
+
 }
     
       
