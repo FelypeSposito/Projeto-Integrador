@@ -1884,7 +1884,7 @@ background-color: #262214;
       }
 
       .opinioes{
-        height: 200vh;
+        height: 250vh;
         grid-template-columns: 10% 80% 10%;
         grid-template-rows: 3% 30% 3% 30% 3% 30% 1% 8%;
         margin-bottom: 150px;
@@ -1894,6 +1894,8 @@ background-color: #262214;
         grid-row: 4;
         grid-column: 2;
       }
+
+
 
       #caixa3{
         grid-column: 2;
@@ -2018,6 +2020,21 @@ background-color: #262214;
         padding: 0;
       }
 
+
+      
+#p-opiniao {
+    
+  margin-top: 1vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #292417;
+  text-decoration: none;
+  font-family: 'Inter';
+}
+
+#caixa3{
+  margin-bottom: 20vh;
+}
 }
     
       
