@@ -8,15 +8,16 @@
 </head>
 <body>
 
-    <div class="navbar" id="topo-total">
+<header>
+    <div class="navbar">
         <div class="logo">
           <img src="IMG/Logovivi-branca.png" width="150px" height="150px" alt="Logo">
         </div>
         <div class="navbar-links">
           <a href="index.html">Início</a>
           <a href="HTML/produto1.html">Velas</a>
-          <a href="responsividade/index.html">Quem Somos</a>
-          <a href="teste2/index.html">Contato</a>
+          <a href="HTML/quemSomos.html">Quem Somos</a>
+          <a href="../responsividade/index.html">Responsividade</a>
         </div>
         <div class="menu-toggle">
           <span class="bar"></span>
@@ -33,57 +34,120 @@
           <li><a href="teste2/index.html">Contato</a></li>
         </ul>
       </div>
-      
+    </header>
 
- <!-- 
-        Carrossel, Quem Somos e Conheça Nossos Produtos
-    -->
-    <div class="carrossel">
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
+      <div class="espaco-navbar" id="topo-total"></div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="IMG/vela banner.JPG" style="width:100%">
-                <div class="text"></div>
+      <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="IMG/velas2-metade-qualidade.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Wax Melts | Limão Siciliano
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="IMG/velas3-metade-qualidade.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Vela Aromática | HAPPY BIRTHDAY                      
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="IMG/velas5-metade-qualidade.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Vela Aromática | Mensagem Secreta              
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="IMG/velas6-metade.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Kit | Réchaud + Wax Melts                        
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="IMG/velas2-metade-qualidade.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Wax Melts | Limão Siciliano              
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="IMG/velas5-metade-qualidade.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                Vela Aromática | HAPPY BIRTHDAY                   
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="IMG/velas2-metade-qualidade.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="IMG/velas3-metade-qualidade.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="IMG/velas5-metade-qualidade.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="IMG/velas6-metade.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="IMG/velas2-metade-qualidade.jpg" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="IMG/velas3-metade-qualidade.jpg" alt=""></label>
+                    </li>
+                </ul>
             </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="IMG/vela banner.JPG" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="IMG/vela banner.JPG" style="width:100%">
-                <div class="text"></div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
+    </section>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </div>
 
+    <div class="espaco-quem-somos"><p>Quem Somos?</p></div>
+
+    
     <div class="quem-somos">
-        <h1>Quem Somos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deleniti ea impedit ad maxime quasi. Facere, molestiae nostrum. Atque est ratione architecto aspernatur fugit facilis, non, nihil quisquam commodi nulla distinctio alias? Ullam molestiae nisi, id architecto voluptatum et maiores laudantium reiciendis consequatur eveniet quos voluptates facilis soluta consequuntur fuga dignissimos exercitationem iste cumque!</p>
+        <p>Bem-vindo à nossa empresa de velas aromáticas, onde criamos momentos de tranquilidade e bem-estar para o seu espaço. Somos apaixonados por oferecer produtos que não apenas iluminam seu ambiente, mas também nutrem sua alma.
+
+            Nossas velas são mais do que apenas cera e pavios; são uma expressão de nossa dedicação ao meio ambiente e ao bem-estar animal. Comprometemo-nos a fornecer velas 100% veganas, sem qualquer ingrediente de origem animal ou testes em animais.
+            
+           </p>
     </div>
 
+  
     <div class="conhecer">
-        <center>
-            <button>CONHEÇA NOSSOS PRODUTOS</button>
-        </center>
+        <a href="HTML/QuemSomos.html">Conheça mais</a>
     </div>
 
     

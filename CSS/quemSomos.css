@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ece0cb
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #403924;
+    /* fundo branco para a navbar */
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    /* para posicionar o dropdown absoluto */
+
+    font-family: 'Inter';
+    font-size: 18px;
+    transition: background-color 1s ease;
+
+}
+
+.navbar span {
+    background-color: #E8E8E8;
+}
+
+
+
+.navbar:hover {
+    background-color: #262214;
+}
+
+.logo img {
+    height: 80%;
+    /* altura da logo ajustável */
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: #E8E8E8;
+    /* cor dos links */
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s ease;
+    /* transição de cor */
+}
+
+.navbar-links a:hover {
+    color: #47412d;
+    /* cor ao passar o mouse */
+}
+
+.menu-toggle {
+    display: none;
+    /* ocultar inicialmente em telas maiores */
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    /* cor das barras do toggle */
+    margin: 5px;
+    transition: transform 0.3s ease, opacity 0.2s ease-out;
+    /* animações */
+}
+
+
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+    top: 12vh;
+    /* alinhado com a parte inferior da navbar */
+    right: 20px;
+    /* margem direita */
+    background-color: #e70000;
+    /* fundo branco para o dropdown */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    /* garantir que esteja acima do conteúdo */
+    width: 200px;
+    /* largura fixa do dropdown */
+}
+
+.navbar-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-dropdown li {
+    padding: 10px 20px;
+}
+
+.navbar-dropdown a {
+    color: #ff0000;
+    /* cor dos links do dropdown */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* transição de cor */
+    display: block;
+    /* garantir que os links ocupem toda a largura */
+}
+
+.navbar-dropdown a:hover {
+    color: #ff0000;
+    /* cor ao passar o mouse */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .navbar-links {
+        display: none;
+        /* ocultar links em telas menores */
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        background-color: #403924;
+        /* fundo branco para o menu toggle */
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        /* garantir que esteja acima do conteúdo */
+        transition: background-color 2s ease;
+        transition: all .7s ease;
+    }
+
+    .navbar-links:hover {
+        background-color: #262214;
+    }
+
+
+
+    .navbar-links.active {
+        display: flex;
+        /* mostrar links quando o menu toggle estiver ativo */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(40vh - 12vh);
+        /* altura igual ao restante da tela */
+
+    }
+
+    .menu-toggle {
+        display: block;
+        /* mostrar menu toggle */
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu-toggle.active~.navbar-dropdown {
+        display: block;
+        /* mostrar dropdown quando menu toggle estiver ativo */
+    }
+
+    .navbar-dropdown {
+        position: static;
+        /* resetar posição para o fluxo do documento */
+        display: none;
+        /* ocultar dropdown em telas menores */
+        width: auto;
+        /* largura automática */
+        box-shadow: none;
+        /* remover sombra */
+        border-radius: 0;
+        /* remover borda arredondada */
+        margin-top: 10px;
+        /* margem superior */
+    }
+
+    .navbar-dropdown ul {
+        padding: 10px 0;
+    }
+
+    .navbar-dropdown li {
+        padding: 10px 20px;
+        text-align: center;
+        /* centralizar texto */
+    }
+}
+
+/* fim navbar */
+
+/* QUEM SOMOS */
+.titulo {
+    display: grid;
+    margin-top: 10vh;
+    grid-template-columns: 35% 65%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.titulo>h1 {
+    font-family: 'Julius Sans One';
+    font-weight: normal;
+    font-size: 4rem;
+    text-align: center;
+    grid-column: 1;
+    color: #403924;
+}
+
+.titulo>hr {
+    border: none;
+    /* Remove any default border */
+    border-top: 2px solid #403924;
+    /* Add a top border to make it visible */
+    width: 100%;
+    /* Adjust the width as needed */
+    align-self: center;
+    /* Center align in the grid column */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.quem-somos {
+    display: grid;
+    grid-template-columns: 31% 69%;
+    grid-template-rows: 5% 90% 5%;
+    margin-left: 12%;
+    margin-right: 10%;
+    height: 550px;
+}
+
+.quem-somos-img {
+    grid-row: 2;
+    background-color: #403924;
+}
+
+.quem-somos-texto {
+    font-size: 24px;
+    font-family: 'Inter';
+    color: #403924;
+    margin-left: 35px;
+    grid-row: 2;
+}
+
+/* QUEM SOMOS END */
+
+/* ANALISE SWOT */
+.analise-swot>h1 {
+    font-family: 'Julius Sans One';
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+    color: #403924;
+}
+
+.analise-swot>p {
+    color: white;
+    background-color: #403924;
+    font-family: 'Inter';
+    font-size: 22px;
+    padding: 70px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 25px;
+}
+
+
+/* ANALISE SWOT END */
+
+/* INICIO FOOTER */
+
+
+.container-footer{
+    height: 40vh;
+    background-color: #403924 ;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 2.5% 40% 27.5% 27.5% 2.5%;
+    transition: background-color 2s ease;
+  }
+  
+  .container-footer:hover{
+  background-color: #262214;
+  }
+  
+  .titulo-contatos-footer{
+    grid-column: 2;
+    align-self: flex-end;
+    justify-self: center;
+    color: aliceblue;
+    font-family: 'Julius Sans One';
+    font-size: 170%;
+  }
+  
+  .container-contatos-footer{
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 20% 3.3% 20% 3.3% 20% 3.3% 20%;
+    grid-template-columns: 100%;
+  }
+  
+  .container-contatos-footer p{
+    align-self: center;
+    justify-self: center;
+    color: #D9D9D9;
+    font-family: 'Julius Sans One';
+  }
+  
+  .linha-1-footer{
+    display: grid;
+    grid-template-columns: 5% 10% 85%;
+  }
+  
+  .linha-2-footer{
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 5% 15% 80%;
+  }
+  
+  .linha-3-footer{
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 5% 15% 80%;
+  }
+  
+  .linha-4-footer{
+    grid-row: 7;
+    display: grid;
+    grid-template-columns: 5% 17.5% 77.5%;
+  }
+  
+  .barra-branca-1, .barra-branca-2, .barra-branca-3, .barra-branca-4{
+    background-color: #D9D9D9;
+    height: 50%;
+    align-self: center;
+    width: 95%;
+    justify-self: start;
+  }
+  
+  .container-logo-vivi-footer{
+    grid-row: 2;
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    grid-template-rows: 100%;
+  }
+  
+  .barra-branca-vertical-footer{
+    height: 100%;
+    width: 2px;
+    background-color: #D9D9D9;
+  }
+  
+  .logo-footer{
+    align-self: center;
+    justify-self: center;
+    padding-right: 50px;
+  }
+  
+  .logo-wexify-footer{
+    grid-row: 2;
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 5% 90% 5%;
+  }
+  
+  .logo-wexify-footer img{
+    grid-row: 2;
+    grid-column: 2;
+    border-radius: 20px;
+  }
+  
+  /* FIM FOOTER */
