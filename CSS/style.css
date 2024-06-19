@@ -24,6 +24,8 @@ body{
     grid-template-columns: 10% 80% 10%;
 }
 
+
+
 .espaco-navbar{
   background-color: #47412d;
 }
@@ -76,6 +78,11 @@ body{
 section {
     background-image: linear-gradient( to bottom right, #47412d, #342f1d, #262214 ) ;
     padding: 50px 0;
+    transition: background 2s ease;
+}
+
+section:hover{
+  background: linear-gradient(to bottom right, #5b533a, #453f26, #39331e );
 }
 
 .container {
@@ -1886,6 +1893,11 @@ background-color: #262214;
   padding: 0;
 }
 
+ 
+.preco-card-1 p {
+  font-family: 'Inter';
+  font-size: 125%;
+}
 
 
 }
