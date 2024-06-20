@@ -25,3 +25,27 @@ menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
   navbarLinks.classList.toggle('active');
 });
+
+// Seleciona todos os links internos da página
+const linksInternos = document.querySelectorAll('a[href^="#"]');
+
+// Função para lidar com o clique nos links internos
+function scrollToSection(event) {
+  event.preventDefault(); // Previne o comportamento padrão do clique no link
+
+  const href = this.getAttribute('href'); // Obtém o valor do atributo href do link
+  const target = document.querySelector(href); // Seleciona o elemento alvo usando o seletor obtido do href
+
+  if (target) {
+    // Usa o método scrollIntoView para rolar suavemente até o elemento alvo
+    target.scrollIntoView({
+      behavior: 'smooth', // Comportamento suavizado
+      block: 'start' // Alinha o topo do elemento ao topo da janela
+    });
+  }
+}
+
+// Adiciona um event listener para cada link interno
+linksInternos.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
