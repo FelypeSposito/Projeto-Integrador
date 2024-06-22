@@ -835,12 +835,9 @@ a:focus {
 #botao-comprar-principal{
 }
 
-#contador{
-  display: none;
-}
 
 #btn-carrinho-principal{
-  margin-top: 50px;
+  margin-top: 20px;
   justify-self: center;
   height: 60px;
 }
