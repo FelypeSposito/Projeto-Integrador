@@ -5,40 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivi - Velas Aromáticas</title>
     <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+        <!--Fonts-->
+    
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!--FontAwesome-->
 
-    <header>
-        <div class="navbar">
-            <div class="logo">
-              <img src="IMG/Logovivi-branca.png" width="150px" height="150px" alt="Logo">
-            </div>
-            <div class="navbar-links">
-              <a href="index.html">Início</a>
-              <a href="HTML/produto1.html">Quem Somos</a>
-              <a href="HTML/quemSomos.html">Sua Conta</a>
-              <a href="#">Carrinho</a>
-            </div>
-            <div class="menu-toggle">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </div>
-          
-          <div class="navbar-dropdown">
-            <ul>
-              <li><a href="#">-</a></li>
-              <li><a href="#">-</a></li>
-              <li><a href="#">-</a></li>
-              <li><a href="#">-</a></li>
-            </ul>
-          </div>
-        </header>
 
-      <div class="espaco-navbar" id="topo-total"></div>
 
-      <section class="secaoCarrossel">
+        
+
+
+        <div id="header">
+          <nav>
+              <div class="logo">
+                  <a href="index.html"><img src="../IMG/logovivibrancapequena-removebg-preview.png" height="70px" alt="Rosa Logo"></a>
+              </div>
+              <div class="toggle">
+                  <span class="first"></span>
+                  <span class="middle"></span>
+                  <span class="last"></span>
+              </div>
+              <div class="navigation-bar">
+                  <ul>
+                      <li class="active"><a href="index.html">Início<span class="underline"></span></a></li>
+                      <li><a href="#">Produtos<span class="underline"></span></a></li>
+                      <li><a href="#">Sobre<span class="underline"></span></a></li>
+                      <li><a href="#">Contatos<span class="underline"></span></a></li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+      
+      
+      
+      
+      
+              
+
+
+
+
+      <section class="secaoCarrossel" id="topo-total">
         <div class="container">
             <div class="carousel">
                 <input type="radio" name="slides" checked="checked" id="slide-1">
@@ -134,54 +144,120 @@
     </section>
 
 
-    <div class="espaco-quem-somos"><p>Quem Somos?</p></div>
+<div class="container-para-fundo">
+  <div class="espaco-quem-somos"><a id="titulo-redirecionamento-quem-somos" href="HTML/QuemSomos.html">Quem Somos?</a></div>
 
     
-    <div class="quem-somos">
-        <p>Bem-vindo à nossa empresa de velas aromáticas, onde criamos momentos de tranquilidade e bem-estar para o seu espaço. Somos apaixonados por oferecer produtos que não apenas iluminam seu ambiente, mas também nutrem sua alma.
-            
-           </p>
-    </div>
+  <div class="quem-somos">
+      <p>Bem-vindo à nossa empresa de velas aromáticas, onde criamos momentos de tranquilidade e bem-estar para o seu espaço. Somos apaixonados por oferecer produtos que não apenas iluminam seu ambiente, mas também nutrem sua alma.
+          
+         </p>
+  </div>
 
 
-    
   
 
+
+
+
+
+  <div class="conhecer">
+      <a href="HTML/QuemSomos.html">Saiba mais</a>
+  </div>
+
+
+ 
+  <div class="espacamento-entre-containers-1">
+  </div>
+
+  <div class="linha-c" id="velas-principais-prod">
+      <div class="linha"></div>
+  </div>
   
+  <div class="espacamento-entre-containers-1" >
+  </div>
+  
+  <!-- INICIO CONTAINER EXTRA -->
 
-
-    <div class="conhecer">
-        <a href="HTML/QuemSomos.html">Conheça mais</a>
-    </div>
-
-
-   
-    <div class="espacamento-entre-containers-1">
-    </div>
-
-    <div class="linha-c" id="velas-principais-prod">
-        <div class="linha"></div>
-    </div>
-    
+  <div class="produtos-em-destaque-container">
+      <div class="titulo-produtos-em-destaque">
+<a href="#primeirocard">
+  Produtos em Destaque
+</a>
+      </div>
+  </div>
+    <!-- FIM CONTAINER EXTRA -->
     <div class="espacamento-entre-containers-1" >
-    </div>
-    
-    <!-- INICIO CONTAINER EXTRA -->
-
-    <div class="produtos-em-destaque-container">
-        <div class="titulo-produtos-em-destaque">
-            <p >
-                Produtos em Destaque
-            </p>
-        </div>
-    </div>
-      <!-- FIM CONTAINER EXTRA -->
-      <div class="espacamento-entre-containers-1" >
-    </div>
+  </div>
 
 
+</div>
 <!-- INICIO PRIMEIRO CONTAINER DO PRIMEIRO CARD -->
  
+<div class="cont-cont" id="primeirocard">
+  <div class="container2">
+    <div class="item">
+        <a href="#">
+            <div class="image" style="background-image: url('IMG/velaextra1.png');"></div>
+            <div class="buttons">
+                <button class="btn btn-compra">Comprar</button>
+                <button class="btn btn-carrinho"><img src="../IMG/adicionar-ao-carrinho-de-compras.png" alt="Carrinho" width="20"></button>
+            </div>
+        </a>
+    </div>
+  
+    <div class="item">
+      <a href="#">
+          <div class="image" style="background-image: url('IMG/velaextra2.png');"></div>
+          <div class="buttons">
+              <button class="btn btn-compra">Comprar</button>
+              <button class="btn btn-carrinho"><img src="../IMG/adicionar-ao-carrinho-de-compras.png" alt="Carrinho" width="20"></button>
+          </div>
+      </a>
+  </div>
+  <div class="item">
+      <a href="#">
+          <div class="image" style="background-image: url('IMG/velaextra.png');"></div>
+          <div class="buttons">
+              <button class="btn btn-compra">Comprar</button>
+              <button class="btn btn-carrinho"><img src="../IMG/adicionar-ao-carrinho-de-compras.png" alt="Carrinho" width="20"></button>
+          </div>
+      </a>
+  </div>
+  </div>
+  
+    <!-- Adicione mais itens conforme necessário -->
+  </div>
+
+
+
+
+  
+<div class="cont-cont">
+  <div class="container2">
+    <div class="item">
+        <a href="#">
+            <div class="image" style="background-image: url('IMG/velas5.JPG');"></div>
+            <div class="buttons">
+                <button class="btn btn-compra">Comprar</button>
+                <button class="btn btn-carrinho"><img src="../IMG/adicionar-ao-carrinho-de-compras.png" alt="Carrinho" width="20"></button>
+            </div>
+        </a>
+    </div>
+  
+    <div class="item">
+      <a href="#">
+          <div class="image" style="background-image: url('IMG/wax-melts.png');"></div>
+          <div class="buttons">
+              <button class="btn btn-compra">Comprar</button>
+              <button class="btn btn-carrinho"><img src="../IMG/adicionar-ao-carrinho-de-compras.png" alt="Carrinho" width="20"></button>
+          </div>
+      </a>
+  </div>
+
+  
+    <!-- Adicione mais itens conforme necessário -->
+  </div>
 <!-- FIM CARDS EM DESTAQUE -->
 
 <div class="espacamento-entre-containers-1">
@@ -347,56 +423,46 @@
     -->
     <div class="outros">
         <a href="HTML/QuemSomos.html" id="outro1">CONHEÇA NOSSA HISTÓRIA</a>
-        <a href="#footer-link"  id="outro2"  class="scroll-link">CONTATE-NOS</a>
+        <a href="#contatos"  id="outro2"  class="scroll-link">CONTATE-NOS</a>
         <a href="#velas-principais-prod" id="outro3"  class="scroll-link"  >NOSSA VELAS</a>
         <a href="#topo-total" id="outro4" class="scroll-link">VOLTAR AO TOPO</a>
     </div>
 
     <!-- FIM CONTAINER PRE FOOTER -->
 
-    <!-- INICIO CONTAINER DO FOOTER -->
-    <div class="container-footer">
-        
-<div class="container-contatos-footer" id="contatos">
 
+<!-- COMECO DO FOOTER -->
+<footer id="footer-fundo">
+  <div class="contact-container">
+    <div class="social-media">
+        <h3>Nos Encontre em:</h3>
+        <div class="links">
+            <a href="tel:+5511985572810"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/vi.vivelas/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/FelypeSposito?"><i class="fab fa-github"></i></a>
+            <a href="https://br.linkedin.com/in/viviane-pinhati-8652b4145"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+      <div class="newsletter">
+        <h3>Receba Novidades:</h3>
+          <form method="post">
+              <input type="email" name="email" placeholder="Type Your Email">
+              <i class="fas fa-envelope"></i>
+          </form>
+      </div>
+  </div>
+</footer>
+<div id="contatos" class="copyright">
+  <svg class="svg-up" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve"><path fill="#262526" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg>
+  <i class="fas fa-angle-double-up arrow-up"></i>
+  <ul class="info">
+      <li>&copy; Vivi Velas Aromáticas</li>
+      <li>Tel: (11) 98557-2810</li>
+      <li>Produzido Pelo Time da <a href="https://www.instagram.com/wexify_/">Wexify</a></li>
+  </ul>
 
-<div class="linha-1-footer">
-    <a href="mailto:"></a><img src="IMG/icone-email.png" height="70%" width="100%" alt="">
-    <p>Email:</p><a href="mailto:aromavivelas@gmail.com" id="noneResp">aromavivelas@gmail.com</a>
-    <div class="barra-branca-1"></div>
 </div>
-
-<div class="linha-2-footer">
-    <a href=""><img src="IMG/icone-telefone.png" height="70%" width="100%" alt=""></a>
-    <p>Telefone:</p> <a href="tel:+5511985572810"id="noneResp">(11) 98557-2810</a>
-    <div class="barra-branca-2"></div>
-</div>
-
-<div class="linha-3-footer">
-    <a href=""><img src="IMG/whatsapp-icone.png" height="70%" width="100%" alt=""></a>
-    <p>Whatsapp:</p> <a href="" class="tel:+5511985572810"id="noneResp">(11) 98557-2810</a>
-    <div class="barra-branca-3"></div>
-</div>
-
-<div class="linha-4-footer">
-    <a href="" target="_blank"><img src="IMG/icone-instagram.png" height="70%" width="100%" alt=""></a>
-    <p>Instagram:</p> <a href="" class="links-footer" id="noneResp">Instagram.com/ViVelas</a>
-    <div class="barra-branca-4"></div>
-</div>
-
-
-
-</div>
-
-<div id="footer-link" class="container-logo-vivi-footer">
-    <div class="barra-branca-vertical-footer"></div>
-    <div class="logo-footer"><img src="IMG/Logovivi-branca.png" width="70%" height="70%" alt=""></div>
-    <div class="barra-branca-vertical-footer"></div>
-</div >
-
-
-    
-    <!-- FIM CONTAINER FOOTER -->
+<!-- FIM DO <FOOTER></FOOTER> -->
 
 <script src="JS/main.js"></script>
 </body>

@@ -1,23 +1,3 @@
-const imgs = document.querySelectorAll('.img-select a');
-const imgBtns = [...imgs];
-let imgId = 1;
-
-imgBtns.forEach((imgItem) => {
-    imgItem.addEventListener('click', (event) => {
-        event.preventDefault();
-        imgId = imgItem.dataset.id;
-        slideImage();
-    });
-});
-
-function slideImage(){
-    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-}
-
-window.addEventListener('resize', slideImage);
-
 // Seleciona todos os links internos da página
 const linksInternos = document.querySelectorAll('a[href^="#"]');
 
@@ -29,6 +9,13 @@ function scrollToSection(event) {
   const target = document.querySelector(href); // Seleciona o elemento alvo usando o seletor obtido do href
 
   if (target) {
+    // Fecha o menu se estiver aberto
+    if (navToggle.classList.contains('active')) {
+      navToggle.classList.remove('active');
+      navSpanMiddle.classList.remove('hide');
+      navNavigationBar.classList.remove('show');
+    }
+
     // Usa o método scrollIntoView para rolar suavemente até o elemento alvo
     target.scrollIntoView({
       behavior: 'smooth', // Comportamento suavizado
@@ -36,6 +23,11 @@ function scrollToSection(event) {
     });
   }
 }
+
+// Adiciona o evento de clique a todos os links internos
+linksInternos.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
 
 // constants
 const body = document.querySelector("body"),
@@ -107,6 +99,3 @@ svgUp.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
-
-
-
