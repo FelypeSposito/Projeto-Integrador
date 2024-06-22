@@ -80,7 +80,7 @@ a:focus {
 
 #contador{
     justify-self: center;
-    width: 45px;
+    width: 60px;
 }
 
 .btn{
@@ -1695,6 +1695,10 @@ h1, h3, #header .navigation-bar a, #header .text span, .menu .box-model .close:h
 
   .espaco-navbar{
     height: 5vh;
+  }
+
+  #contador{
+    display: none;
   }
 }
 
