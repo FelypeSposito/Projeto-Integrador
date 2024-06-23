@@ -1259,6 +1259,7 @@ ul {
   grid-template-areas:
     "historia contato velas"
     "topo contato velas";
+
 }
 
 #outro1 {
@@ -1650,7 +1651,9 @@ ul {
     grid-template-columns: 100%;
     grid-template-rows: 25% 25% 25% 25%;
     height: 45vh;
+    align-items: center;
   }
+
 
   .outros {
     font-size: 14px;
@@ -1659,23 +1662,27 @@ ul {
   #outro1 {
     grid-row: 1;
     grid-column: 1;
+    padding: 50px
   }
 
   #outro2 {
     grid-row: 2;
     grid-column: 1;
     writing-mode: horizontal-tb;
+    padding: 50px
   }
 
   #outro3 {
     grid-row: 3;
     grid-column: 1;
+    padding: 50px
   }
 
   #outro4 {
     grid-row: 4;
     grid-column: 1;
     background-color: #403924;
+    padding: 50px
   }
 
   .nossos-produtos {
