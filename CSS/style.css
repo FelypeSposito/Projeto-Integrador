@@ -183,22 +183,22 @@ ul {
     }
 
     &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-      box-shadow: 0px 0px 0px 2px #e8e8e8;
+      box-shadow: 0px 0px 0px 2px #e8e8e800;
     }
     &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-      box-shadow: 0px 0px 0px 2px #e8e8e8;
+      box-shadow: 0px 0px 0px 2px #e8e8e800;
     }
     &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-      box-shadow: 0px 0px 0px 2px #e8e8e8;
+      box-shadow: 0px 0px 0px 2px #e8e8e800;
     }
     &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-      box-shadow: 0px 0px 0px 2px #e8e8e8;
+      box-shadow: 0px 0px 0px 2px #e8e8e800;
     }
     &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-      box-shadow: 0px 0px 0px 2px #e8e8e8;
+      box-shadow: 0px 0px 0px 2px #e8e8e800;
     }
     &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-      box-shadow: 0px 0px 0px 2px #e8e8e8;
+      box-shadow: 0px 0px 0px 2px #e8e8e800;
     }
   }
 }
@@ -935,42 +935,42 @@ ul {
   border: 1px solid #a19a86;
   text-decoration: none;
 }
-
 #cd1{
-    background-image: url('../IMG/velas2.JPG');
+  background-image: url('../IMG/velas2.JPG');
 }
 
 #cd2{
-    background-image: url('../IMG/velas5-metade-qualidade.jpg');
+  background-image: url('../IMG/kit4velas.jpeg');
 }
 
 #cd3{
-    background-image: url('../IMG/velas6-metade.jpg');
+  background-image: url('../IMG/velas4.JPG');
 }
 
 #cd4{
-    background-image: url('../IMG/velas3-metade-qualidade.jpg');
+  background-image: url('../IMG/velas6-metade.jpg');
 }
 
 #cd5{
-    background-image: url('../IMG/velas1.JPG');
+  background-image: url('../IMG/velaextra3.png');
 }
 
 #cd6{
-    background-image: url('../IMG/velas4.JPG');
+  background-image: url('../IMG/refil.jpeg');
 }
 
 #cd7{
-    background-image: url('../IMG/velas5-metade-qualidade.jpg');
+  background-image: url('../IMG/kit-3-velas.jpeg');
 }
 
 #cd8{
-    background-image: url('../IMG/velas6-metade.jpg');
+  background-image: url('../IMG/rechaud.jpeg');
 }
 
 #cd9{
-    background-image: url('../IMG/velas2-metade-qualidade.jpg');
+  background-image: url('../IMG/velavanilla.jpeg');
 }
+
 
 
 .card:hover {
