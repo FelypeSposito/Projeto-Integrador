@@ -1689,7 +1689,7 @@ ul li {
 }
 
 .container-ods{
-    height: 75vh;
+    height: 100vh;
     background-color: #E0E0E0;
 }
 .container-ods{
@@ -1705,7 +1705,6 @@ ul li {
 
 .img1ods img{
     align-self: center;
-    margin-bottom: 100px;
 
 }
 
@@ -1726,7 +1725,6 @@ ul li {
 
 .ods1 img, .ods1 p, .ods2 img, .ods2 p{
     align-self: center;
-    margin: 20px;
 }
 
 .ods1, .ods2{
@@ -1736,6 +1734,8 @@ ul li {
 .ods1 p, .ods2 p{
     color: #e9e9e9;
     font-size: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media only screen and (max-width: 908px){
