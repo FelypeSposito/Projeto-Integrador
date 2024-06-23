@@ -1208,6 +1208,15 @@ ul {
 .quem-somos:hover{
   background-color: #121212;
 }
+@media (max-width: 992px) {
+  body {
+      padding: 0;
+  }
+  .quem-somos{
+    
+  border-radius: 35px;
+  }
+}
 
 .quem-somos > p {
   font-family: "Inter";
@@ -2064,7 +2073,7 @@ h1, h3, #header .navigation-bar a, #header .text span, .menu .box-model .close:h
 .loader .loader-item {
   position: relative;
   float: left;
-  height: 40px;
+  height: 40px; 
   width: 4px;
   margin: 0 2px;
   background-color: #fff;
