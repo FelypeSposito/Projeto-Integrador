@@ -1725,6 +1725,7 @@ ul li {
 
 .ods1 img, .ods1 p, .ods2 img, .ods2 p{
     align-self: center;
+    height: 70%;
 }
 
 .ods1, .ods2{
@@ -1774,7 +1775,7 @@ ul li {
     
     .ods2 img{
         justify-self: center;
-        height: 50%;
+        height: 55%;
     }
 
 }
