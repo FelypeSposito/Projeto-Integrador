@@ -36,6 +36,8 @@ a:focus {
 
 .btn-conheca-mais{
   display: grid;
+  height: 15vh;
+  margin-top: 5%;
 }
 
 .btn-conheca-mais button{
@@ -121,9 +123,11 @@ a:focus {
 .img-select{
     display: flex;
 }
+
 .img-item{
     margin: 0.3rem;
     transition: opacity 0.5s ease;
+    width: 50%;
 }
 
 
@@ -325,7 +329,7 @@ a:focus {
     }
 
     .img-item img{
-      width: 33%;
+      width: 100%;
     }
     .card-wrapper{
         height: 70vh;
@@ -580,39 +584,39 @@ a:focus {
 }
 
 #cd1{
-    background-image: url('../IMG/adicionar-ao-carrinho-de-compras.png');
+    background-image: url('../IMG/velas2.JPG');
 }
 
 #cd2{
-    background-image: url('../../IMG/velas5-metade-qualidade.jpg');
+    background-image: url('../IMG/kit4velas.jpeg');
 }
 
 #cd3{
-    background-image: url('../../IMG/velas6-metade.jpg');
+    background-image: url('../IMG/velas4.JPG');
 }
 
 #cd4{
-    background-image: url('../../IMG/velas3-metade-qualidade.jpg');
+    background-image: url('../IMG/velas6-metade.jpg');
 }
 
 #cd5{
-    background-image: url('../../IMG/velas1.JPG');
+    background-image: url('../IMG/velaextra3.png');
 }
 
 #cd6{
-    background-image: url('../../IMG/velas4.JPG');
+    background-image: url('../IMG/refil.jpeg');
 }
 
 #cd7{
-    background-image: url('../../IMG/velas5-metade-qualidade.jpg');
+    background-image: url('../IMG/kit-3-velas.jpeg');
 }
 
 #cd8{
-    background-image: url('../../IMG/velas6-metade.jpg');
+    background-image: url('../IMG/rechaud.jpeg');
 }
 
 #cd9{
-    background-image: url('../../IMG/velas2-metade-qualidade.jpg');
+    background-image: url('../IMG/velavanilla.jpeg');
 }
 
 
@@ -789,43 +793,6 @@ a:focus {
     text-decoration: none;
     width: 400px;
     height: 500px;
-  }
-  
-  #cd1{
-      background-image: url('../../IMG/velas2.JPG');
-  }
-  
-  #cd2{
-      background-image: url('../../IMG/velas5-metade-qualidade.jpg');
-  }
-  
-  #cd3{
-      background-image: url('../../IMG/velas6-metade.jpg');
-  }
-  
-  #cd4{
-      background-image: url('../../IMG/velas3-metade-qualidade.jpg');
-  }
-  
-  #cd5{
-      background-image: url('../../IMG/velas1.JPG');
-  }
-  
-  #cd6{
-      background-image: url('../../IMG/velas4.JPG');
-  }
-  
-  #cd7{
-      background-image: url('../../IMG/velas5-metade-qualidade.jpg');
-  }
-  
-  #cd8{
-      background-image: url('../../IMG/velas6-metade.jpg');
-  }
-  
-  #cd9{
-      background-image: url('../../IMG/velas2-metade-qualidade.jpg');
-      margin-bottom: 50px;
   }
   
   .footer-section p, .footer-section h3, .footer-section .footer-social-icon{
