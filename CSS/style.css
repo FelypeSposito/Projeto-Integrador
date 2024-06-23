@@ -916,7 +916,7 @@ ul {
 .card {
   font-family: 'Heebo';
   --bg-filter-opacity: 0.5;
-  background-image: url('/IMG/velas2.JPG');
+  background-image: url('../IMG/velas2.JPG');
   background-size: cover;
   height: 20em;
   width: 15em;
@@ -941,35 +941,35 @@ ul {
 }
 
 #cd2{
-    background-image: url('/IMG/velas5-metade-qualidade.jpg');
+    background-image: url('../IMG/velas5-metade-qualidade.jpg');
 }
 
 #cd3{
-    background-image: url('/IMG/velas6-metade.jpg');
+    background-image: url('../IMG/velas6-metade.jpg');
 }
 
 #cd4{
-    background-image: url('/IMG/velas3-metade-qualidade.jpg');
+    background-image: url('../IMG/velas3-metade-qualidade.jpg');
 }
 
 #cd5{
-    background-image: url('/IMG/velas1.JPG');
+    background-image: url('../IMG/velas1.JPG');
 }
 
 #cd6{
-    background-image: url('/IMG/velas4.JPG');
+    background-image: url('../IMG/velas4.JPG');
 }
 
 #cd7{
-    background-image: url('/IMG/velas5-metade-qualidade.jpg');
+    background-image: url('../IMG/velas5-metade-qualidade.jpg');
 }
 
 #cd8{
-    background-image: url('/IMG/velas6-metade.jpg');
+    background-image: url('../IMG/velas6-metade.jpg');
 }
 
 #cd9{
-    background-image: url('/IMG/velas2-metade-qualidade.jpg');
+    background-image: url('../IMG/velas2-metade-qualidade.jpg');
 }
 
 
