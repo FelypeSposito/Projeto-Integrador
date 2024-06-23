@@ -305,6 +305,28 @@ ul {
   }
 }
 
+.carousel__slide div {
+  @include aspect-ratio(3, 2);
+  width: 100%;
+}
+
+.carousel__slide img {
+  display: block;
+  flex: 1 1 auto;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .carousel__slide div {
+    width: auto; /* Altera para largura automática */
+  }
+
+  .carousel__slide img {
+    width: auto; /* Altera para largura automática */
+    height: auto; /* Mantém a proporção original */
+    max-width: 100%; /* Evita que a imagem ultrapasse o tamanho do contêiner */
+  }
+}
 
 
 /* CARD OFICIAL */
@@ -325,7 +347,6 @@ ul {
   position: relative;
   overflow: hidden;
 }
-
 
 
 .item:hover .image {
