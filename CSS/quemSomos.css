@@ -1758,7 +1758,11 @@ ul li {
 
     .ods1 img{
         justify-self: center;
-        height: 50%;
+        height: 40%;
+    }  
+    .ods2 img{
+        justify-self: center;
+        height: 40%;
     }
 
     .ods1 p, .ods2 p{
@@ -1772,10 +1776,6 @@ ul li {
         grid-template-rows: 50% 50%;
         background-color: #407f46;
     }   
-    
-    .ods2 img{
-        justify-self: center;
-        height: 50%;
-    }
+  
 
 }
