@@ -326,6 +326,12 @@ ul {
     height: auto; /* Mantém a proporção original */
     max-width: 100%; /* Evita que a imagem ultrapasse o tamanho do contêiner */
   }
+  
+.carousel__thumbnails img{
+  max-width: 95%;
+}
+
+
 }
 
 
