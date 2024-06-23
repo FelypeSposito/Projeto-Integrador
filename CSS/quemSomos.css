@@ -1757,7 +1757,7 @@ ul li {
 
     .ods1 img{
         justify-self: center;
-        height: 100%;
+        height: 50%;
     }
 
     .ods1 p, .ods2 p{
@@ -1774,7 +1774,7 @@ ul li {
     
     .ods2 img{
         justify-self: center;
-        height: 100%;
+        height: 50%;
     }
 
 }
