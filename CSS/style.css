@@ -1961,6 +1961,10 @@ footer .newsletter i {
   padding-left: 150px;
 }
 
+.navigation-bar {
+  transition: all .3s ease;
+}
+
 p, .a-CTA, input, #header .navigation-bar a, .copyright li, .contact .form form label, .contact .form form button {
   font-family: Cabin, sans-serif;
 }

@@ -1793,3 +1793,6 @@ ul li {
   
 
 }
+.navigation-bar {
+  transition: all .3s ease;
+}
