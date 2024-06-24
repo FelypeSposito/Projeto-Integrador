@@ -878,6 +878,7 @@ input:focus {
     height: calc(12vh - 22px);
     background-size: cover;
     padding: 20px 70px;
+    z-index: 1000;
   }
   #header nav {
     position: fixed;
