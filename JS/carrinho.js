@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return '../IMG/velas2.JPG';
         case 'Vela Aromática Massageadora':
           return '../IMG/velaextra2.png';
+          case 'Vela Aromática | Mensagem Secreta':
+            return '../IMG/velas5.JPG';
       default:
         return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
         
@@ -98,3 +100,5 @@ document.addEventListener('DOMContentLoaded', function() {
   // Atualiza o carrinho ao carregar a página
   updateCart();
 });
+
+
