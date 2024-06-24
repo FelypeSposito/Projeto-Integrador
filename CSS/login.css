@@ -143,7 +143,7 @@ input {
 .sign-in-container {
 	left: 0;
 	width: 50%;
-	z-index: 2;
+	z-index: 0;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -347,7 +347,7 @@ input:focus {
   
   .navigation-bar{
     padding-left: 150px;
-    z-index: 1000;
+    z-index: 10000;
   }
   .navigation-bar {
     transition: all .3s ease;
@@ -878,13 +878,13 @@ input:focus {
     height: calc(12vh - 22px);
     background-size: cover;
     padding: 20px 70px;
-    z-index: 1000;
+    z-index: 10000;
   }
   #header nav {
     position: fixed;
     top: 0;
     padding: 20px 36px 20px;
-    z-index: 20;
+    z-index: 2000;
     background-color: #241f11ef;
   }
   #header nav .toggle {
@@ -894,7 +894,7 @@ input:focus {
     background-color: transparent;
     border: none;
     padding: 0;
-    z-index: 21;
+    z-index: 2100;
   }
   #header nav .toggle:focus {
     outline: none;
@@ -1012,7 +1012,7 @@ input:focus {
   #header .svg-down {
     bottom: 0;
     left: 50%;
-    z-index: 5;
+    z-index: 500;
     margin-left: -96px;
     margin-bottom: -12px;
     color: #fff;
@@ -1023,7 +1023,7 @@ input:focus {
     bottom: -10px;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 10;
+    z-index: 1000;
     background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/arrow-down.png") no-repeat center;
   }
   /*End #header*/
@@ -1054,7 +1054,7 @@ input:focus {
     }
 
     #header{
-    z-index: 1000;
+    z-index: 10000;
     }
   }
   
@@ -1077,7 +1077,7 @@ input:focus {
         height: 100%;
         background-color: #1f1b11f6;
         overflow: hidden;
-        z-index: 20;
+        z-index: 2000;
         padding: 40px;
     }
     #header .navigation-bar ul {
@@ -1095,7 +1095,7 @@ input:focus {
         margin-bottom: 40px;
     }
     #header{
-      z-index: 1000;
+      z-index: 10000;
       }
   
   }
@@ -1116,7 +1116,7 @@ input:focus {
         width: 48%;
     }
     #header{
-      z-index: 1000;
+      z-index: 10000;
       }
   }
   /*End Home Page Responsive*/@media (max-width: 768px) {
@@ -1131,7 +1131,7 @@ input:focus {
         padding: 40px;
     }
     #header{
-      z-index: 1000;
+      z-index: 10000;
       }
   }
   
