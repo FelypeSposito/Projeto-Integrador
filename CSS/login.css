@@ -1052,6 +1052,10 @@ input:focus {
     #contador{
       display: none;
     }
+
+    #header{
+    z-index: 1000;
+    }
   }
   
   @media (max-width: 768px) {
@@ -1090,7 +1094,9 @@ input:focus {
     footer .social-media {
         margin-bottom: 40px;
     }
-  
+    #header{
+      z-index: 1000;
+      }
   
   }
   
@@ -1109,7 +1115,9 @@ input:focus {
         padding: 20px;
         width: 48%;
     }
-  
+    #header{
+      z-index: 1000;
+      }
   }
   /*End Home Page Responsive*/@media (max-width: 768px) {
     /* Remova a propriedade 'position: fixed;' de #header .navigation-bar */
@@ -1122,6 +1130,9 @@ input:focus {
         z-index: 20;
         padding: 40px;
     }
+    #header{
+      z-index: 1000;
+      }
   }
   
   
