@@ -1212,6 +1212,12 @@ ul {
   body {
       padding: 0;
   }
+
+  .titulo-produtos-em-destaque a{
+    font-size: 75%;
+  }
+
+
   .quem-somos{
     
   border-radius: 35px;
@@ -1256,82 +1262,6 @@ ul {
   color: rgb(197, 197, 197);
 }
 
-
-
-.outros {
-  width: 100%;
-  font-family: "Julius Sans One";
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: 50% 20% 30%;
-  grid-template-rows: 50vh 20vh;
-  grid-template-areas:
-    "historia contato velas"
-    "topo contato velas";
-
-}
-
-#outro1 {
-  background-color: #403924;
-  text-decoration: none;
-  color: white;
-  grid-area: historia;
-  font-size: 150%;
-  text-align: center;
-  align-content: center;
-  transition: background-color 0.5s ease;
-}
-
-#outro1:hover {
-  background-color: #252115;
-}
-
-#outro2 {
-  background-color: white;
-  text-decoration: none;
-  color: #403924;
-  grid-area: contato;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  text-align: center;
-  align-content: center;
-  font-size: 150%;
-  transition: background-color 0.5s ease;
-}
-
-#outro2:hover {
-  background-color: rgb(189, 189, 189);
-}
-
-#outro3 {
-  background-color: #a0a0a0;
-  text-decoration: none;
-  color: white;
-  grid-area: velas;
-  text-align: center;
-  align-content: center;
-  font-size: 170%;
-  transition: background-color 0.5s ease;
-}
-
-#outro3:hover {
-  background-color: rgb(100, 100, 100);
-}
-
-#outro4 {
-  background-color: #8d8d8d;
-  text-decoration: none;
-  color: white;
-  grid-area: topo;
-  text-align: center;
-  align-content: center;
-  font-size: 160%;
-  transition: background-color 0.5s ease;
-}
-
-#outro4:hover {
-  background-color: #555555;
-}
 
 
 /* NAVBAR */

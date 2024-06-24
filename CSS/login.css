@@ -263,6 +263,7 @@ input {
     background-color: #252216;
 }
 
+
 input:focus {
     outline: none;
 }
