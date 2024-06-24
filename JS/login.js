@@ -73,23 +73,6 @@ const body = document.querySelector("body"),
     boxModelImage = document.querySelector(".menu .box-model img"),
     pageTitle = document.querySelector("title");
 
-// remove loader
-function fadeOutEffect() {
-    const fadeEffect = setInterval(function() {
-        if (!loader.style.opacity) {
-            loader.style.opacity = 1;
-        }
-        if (loader.style.opacity > 0) {
-            loader.style.opacity -= 0.4;
-        } else {
-            body.classList.remove('stop-scroll');
-            loader.classList.add('remove');
-            clearInterval(fadeEffect);
-        }
-    }, 100);
-}
-window.addEventListener("load", fadeOutEffect);
-
 // prevent links click hash
 links.forEach(link =>
     link.addEventListener("click", function(e) {
@@ -104,13 +87,6 @@ navToggle.addEventListener("click", () => {
     navNavigationBar.classList.toggle("show");
 });
 
-// svg-up smooth scroll
-svgUp.addEventListener("click", () => {
-    window.scroll({
-        top: 0,
-        behavior: "smooth"
-    });
-});
 
 /*
     SEÇÃO DE LOGIN
