@@ -64,4 +64,24 @@
   .navigation-buttons button:hover {
 	background-color: #0056b3;
   }
+  .product-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .product-image {
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+  }
+  
+  .product-details {
+	flex: 1; /* Para ocupar todo o espaço restante */
+  }
+  
+  .divider {
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
   
