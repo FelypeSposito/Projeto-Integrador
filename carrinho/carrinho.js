@@ -71,16 +71,19 @@ document.addEventListener('DOMContentLoaded', function() {
     if (cart.length === 0) {
       cartList.innerHTML = '<p>Carrinho vazio</p>';
     } else {
-      cart.forEach(item => {
+      cart.forEach((item, index) => {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
         cartItem.innerHTML = `
-          <img src="../IMG/rechaud.jpeg" alt="Imagem do Produto" style="width: 100px; height: 100px; float: left; margin-right: 10px;">
-          <div>
-            <p><strong>${item.name}</strong> - R$ ${item.price.toFixed(2)}</p>
-            <p>${item.description}</p>
-            <button class="remove-from-cart" data-name="${item.name}">Remover do Carrinho</button>
+          <div class="product-info">
+            <img src="${getProductImage(index)}" alt="Imagem do Produto" style="width: 100px; height: 100px; float: left; margin-right: 10px;">
+            <div>
+              <p><strong>${item.name}</strong> - R$ ${item.price.toFixed(2)}</p>
+              <p>${item.description}</p>
+              <button class="remove-from-cart" data-name="${item.name}">Remover do Carrinho</button>
+            </div>
           </div>
+          <hr>
         `;
         cartList.appendChild(cartItem);
         totalPrice += parseFloat(item.price);
@@ -109,5 +112,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart = cart.filter(item => item.name !== name);
     localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  // Função para obter a URL da imagem do produto com base no índice
+  function getProductImage(index) {
+    switch (index) {
+      case 0:
+        return '../IMG/rechaud.jpeg';
+      case 1:
+        return '../IMG/velaextraM.png';
+      case 2:
+        return '../IMG/velas2.JPG';
+      default:
+        return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
+    }
   }
 });
