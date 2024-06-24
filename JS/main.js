@@ -123,3 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
       alert("Item adicionado ao carrinho!")
       console.log(carrinho_items)
   }
+
+
+  

@@ -20,11 +20,21 @@ ul {
 
 .btn{
   border-radius: 5px;
+  
+}
+
+.abtn{
+  align-self: center;
 }
 
 .btn:hover {
   background-color:#403924bd ;
   transform: translateY(-3px);
+}
+
+#botao-sem-fundo{
+  background-color: transparent;
+  border: none;
 }
 
 .produtos-em-destaque-container {
