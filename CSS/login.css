@@ -68,7 +68,7 @@ button.ghost {
 }
 
 form {
-	background-image: linear-gradient(to bottom right, #d3c2a4, #b6a07d);
+	background-image: linear-gradient(to bottom right, #d6c8b0, #ccb796);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -88,7 +88,7 @@ input {
 }
 
 .container {
-	background-color: #c7b390;
+	background-color: #ddcaa9;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -214,7 +214,7 @@ input {
 }
 
 .social-container a {
-	border: 1px solid #DDDDDD;
+	border: 1px solid #403924;
 	border-radius: 50%;
 	display: inline-flex;
 	justify-content: center;
@@ -1135,4 +1135,16 @@ footer a {
   }
   /*End Mutual*/
   
-  
+  @media (max-width: 768px){
+    h1{
+      font-size: 120%;
+    }
+    form{
+      padding: 0;
+    }
+ 
+
+    #email-criar, #senha-criar, #nome-criar, #senha-logar, #email-logar{
+        width: 90%;
+    }
+  }
