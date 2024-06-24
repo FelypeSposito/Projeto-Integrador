@@ -33,16 +33,31 @@
   
   .cart-item {
 	border-bottom: 1px solid #ccc;
-	padding: 5px;
-	margin: 15px;
+	padding: 10px;
   }
   
   .cart-item p {
 	margin: 0;
   }
   
-  .cart-total {
-	text-align: right;
+  .product-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .product-image {
+	width: 100px; /* Largura fixa para a imagem */
+	height: auto;
+	margin-right: 10px;
+  }
+  
+  .product-details {
+	flex: 1; /* Para ocupar todo o espaço restante */
+  }
+  
+  .divider {
+	margin-top: 10px;
 	margin-bottom: 10px;
   }
   
@@ -63,25 +78,5 @@
   
   .navigation-buttons button:hover {
 	background-color: #0056b3;
-  }
-  .product-info {
-	display: flex;
-	align-items: center;
-	margin-bottom: 10px;
-  }
-  
-  .product-image {
-	width: 100px;
-	height: 100px;
-	margin-right: 10px;
-  }
-  
-  .product-details {
-	flex: 1; /* Para ocupar todo o espaço restante */
-  }
-  
-  .divider {
-	margin-top: 10px;
-	margin-bottom: 10px;
   }
   

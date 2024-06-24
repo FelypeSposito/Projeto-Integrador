@@ -39,50 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
         cartItem.innerHTML = `
-          <p><strong>${item.name}</strong> - R$ ${item.price.toFixed(2)}</p>
-          <p>${item.description}</p>
-        `;
-        cartList.appendChild(cartItem);
-        totalPrice += parseFloat(item.price);
-      });
-    }
-
-    cartTotal.textContent = totalPrice.toFixed(2);
-  }
-
-  // Atualiza o carrinho ao carregar a página
-  updateCart();
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const cartList = document.getElementById('cart-list');
-  const cartTotal = document.getElementById('total');
-
-  // Atualiza o carrinho ao carregar a página
-  updateCart();
-
-  // Função para atualizar o carrinho na página carrinho.html
-  function updateCart() {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    cartList.innerHTML = '';
-    let totalPrice = 0;
-
-    if (cart.length === 0) {
-      cartList.innerHTML = '<p>Carrinho vazio</p>';
-    } else {
-      cart.forEach((item, index) => {
-        const cartItem = document.createElement('div');
-        cartItem.classList.add('cart-item');
-        cartItem.innerHTML = `
           <div class="product-info">
-            <img src="${getProductImage(index)}" alt="Imagem do Produto" class="product-image">
+            <img src="${getProductImage(item.name)}" alt="Imagem do Produto" class="product-image">
             <div class="product-details">
               <p><strong>${item.name}</strong> - R$ ${item.price.toFixed(2)}</p>
               <p>${item.description}</p>
               <button class="remove-from-cart" data-name="${item.name}">Remover do Carrinho</button>
             </div>
-            <div style="clear: both;"></div>
           </div>
           <hr class="divider">
         `;
@@ -115,17 +78,20 @@ document.addEventListener('DOMContentLoaded', function() {
     localStorage.setItem('cart', JSON.stringify(cart));
   }
 
-  // Função para obter a URL da imagem do produto com base no índice
-  function getProductImage(index) {
-    switch (index) {
-      case 0:
+  // Função para obter a URL da imagem do produto com base no nome do produto
+  function getProductImage(productName) {
+    switch (productName) {
+      case 'Produto 1':
         return '../IMG/rechaud.jpeg';
-      case 1:
+      case 'Produto 2':
         return '../IMG/velaextraM.png';
-      case 2:
+      case 'Produto 3':
         return '../IMG/velas2.JPG';
       default:
         return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
     }
   }
+
+  // Atualiza o carrinho ao carregar a página
+  updateCart();
 });
