@@ -25,7 +25,7 @@ a:focus {
   writing-mode: vertical-rl; /* Texto vertical da direita para a esquerda */
   text-align: center; /* Centraliza o texto dentro do botão */
   white-space: nowrap; /* Evita que o texto quebre em várias linhas */
-  width: 85%; /* Largura suficiente para acomodar o texto vertical */
+  width: 8%; /* Largura suficiente para acomodar o texto vertical */
   padding: 0px; /* Ajuste conforme necessário */
   writing-mode: initial;
   text-orientation: upright;
@@ -64,7 +64,7 @@ a:focus {
 
 
 .espaco-navbar{
-  height: 15vh;
+  height: 10vh;
 }
 
 /* PRODUTO PRINCIPAL */
@@ -277,27 +277,34 @@ a:focus {
 }
 
 .social-links{
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .social-links a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 32px;
-  color: white;
-  border: 1px solid #47412d;
-  margin: 0 0.5rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: all 0.5s ease;
-  font-size: 9px;
-  justify-self: center;
-  background-color: #403924;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 32px;
+    color: #47412d;
+    border: 1px solid #47412d;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #47412d;
+    border-color: transparent;
+    color: antiquewhite;
 }
 
+.social-links a:focus{
+  background-color: #403924;
+  border: none;
+  color: antiquewhite;
+}
 
 #botao-comprar-principal{
     writing-mode: vertical-rl; /* Texto vertical da direita para a esquerda */
@@ -307,7 +314,7 @@ a:focus {
     padding: 0px; /* Ajuste conforme necessário */
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 120%;
+    font-size: 100%;
     font-family: 'Julius Sans One';
     justify-self: center;
   }
@@ -817,7 +824,7 @@ a:focus {
   justify-content: center;
   width: 100px;
   height: 32px;
-  color: #ffffff;
+  color: #47412d;
   border: 1px solid #47412d;
   margin: 0 0.5rem;
   border-radius: 10px;
@@ -1929,3 +1936,25 @@ footer .newsletter i {
 
 /* fim footer */
 
+/* 283
+
+.social-links{
+  display: flex;
+  align-items: center;
+}
+.social-links a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 32px;
+  color: white;
+  border: 1px solid #47412d;
+  margin: 0 0.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.5s ease;
+  font-size: 9px;
+  justify-self: center;
+} */

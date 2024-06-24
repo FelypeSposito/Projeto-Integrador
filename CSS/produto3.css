@@ -277,27 +277,34 @@ a:focus {
 }
 
 .social-links{
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .social-links a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 32px;
-  color: white;
-  border: 1px solid #47412d;
-  margin: 0 0.5rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: all 0.5s ease;
-  font-size: 9px;
-  justify-self: center;
-  background-color: #403924;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 32px;
+    color: #47412d;
+    border: 1px solid #47412d;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #47412d;
+    border-color: transparent;
+    color: antiquewhite;
 }
 
+.social-links a:focus{
+  background-color: #403924;
+  border: none;
+  color: antiquewhite;
+}
 
 #botao-comprar-principal{
     writing-mode: vertical-rl; /* Texto vertical da direita para a esquerda */
@@ -817,7 +824,7 @@ a:focus {
   justify-content: center;
   width: 100px;
   height: 32px;
-  color: #ffffff;
+  color: #47412d;
   border: 1px solid #47412d;
   margin: 0 0.5rem;
   border-radius: 10px;
@@ -1929,3 +1936,25 @@ footer .newsletter i {
 
 /* fim footer */
 
+/* 283
+
+.social-links{
+  display: flex;
+  align-items: center;
+}
+.social-links a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 32px;
+  color: white;
+  border: 1px solid #47412d;
+  margin: 0 0.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.5s ease;
+  font-size: 9px;
+  justify-self: center;
+} */
