@@ -1426,7 +1426,7 @@ h1.title{
   
   .about-us-info h2 {
     color: #403924;
-    font-size: 40pt;
+    font-size: 300%;
     text-align: right;
   }
   
@@ -1790,7 +1790,8 @@ ul li {
         grid-template-rows: 50% 50%;
         background-color: #407f46;
     }   
-  
+
+
 
 }
 .navigation-bar {
