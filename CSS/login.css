@@ -10,6 +10,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	background-color: #DDDDDD;  
 }
 
 h1 {
@@ -42,8 +43,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #9e9e9e;
+	background-color: #DDDDDD;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -67,7 +68,7 @@ button.ghost {
 }
 
 form {
-	background-color: #FFFFFF;
+	background-color: #7c714f;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -83,10 +84,11 @@ input {
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+  border-radius: 20px;
 }
 
 .container {
-	background-color: #fff;
+	background-color: #b8a990;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -158,7 +160,7 @@ input {
 .overlay {
 	background: #FF416C;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #c4b69e, #bdb09b);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;

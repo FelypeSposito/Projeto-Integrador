@@ -135,7 +135,7 @@ function signInFunction() {
     let regExSenha = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[$&@#])[0-9a-zA-Z$&@#]{8,}$/;
     let senha = document.getElementById('senha-criar').value;
 
-    if ((regExNome.test(nome)) && (regExEmail.test(email)) && (regExSenha.test(senha))) {
+    if ((regExEmail.test(email))) {
         console.log("Sucesso!")
 
         string_do_nome = nome;
