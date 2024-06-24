@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Vivi Velas</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+        <!--Fonts-->
+    
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!--FontAwesome-->
+</head>
+<body>
+    
+
+
+    <div id="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="../IMG/logovivibrancapequena-removebg-preview.png" height="70px" alt="Rosa Logo"></a>
+            </div>
+            <div class="toggle">
+                <span class="first"></span>
+                <span class="middle"></span>
+                <span class="last"></span>
+            </div>
+            <div class="navigation-bar">
+                <ul>
+                    <li ><a href="../index.html">Início<span class="underline"></span></a></li>
+                    <li><a href="QuemSomos.html">Sobre<span class="underline"></span></a></li>
+                    <li class="active"><a href="login.html">Perfil<span class="underline"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1 class="titulo-h1-login">Criar Conta</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-google"></i></a>
+				<a href="#" class="social"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="social"><i class="fab fa-apple"></i></a>
+			</div>
+			<span>ou use seu email para registro</span>
+			<input type="text" placeholder="Nome" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Senha" />
+			<button class="botao-login">Criar</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1 >Entrar</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-google"></i></a>
+				<a href="#" class="social"><i class="fab fa-twitter"></i></a>
+				<a href="#" class="social"><i class="fab fa-apple"></i></a>
+			</div>
+			<span>ou use sua conta</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Senha" />
+			<a href="#">Esqueceu sua Senha?</a>
+			<button class="botao-login2">Entrar</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1 class="titulo-h1-login">Bem Vindo!</h1>
+				<p class="paragrafo-login">para continuar conectado conosco, entre com sua conta pessoal.</p>
+				<button class="ghost" id="signIn">Entrar</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1 class="titulo-h1-login">Olá Novamente!</h1>
+				<p class="paragrafo-login">Entre com sua conta pessoal para continuar conectado conosco.</p>
+				<button class="botao-login" class="ghost" id="signUp">Criar Conta</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="../JS/login.js"></script>
+</body>
+</html>
