@@ -87,8 +87,11 @@ document.addEventListener('DOMContentLoaded', function() {
         return '../IMG/velaextraM.png';
       case 'Produto 3':
         return '../IMG/velas2.JPG';
+        case 'Vela Aromática Massageadora':
+          return '../IMG/velaextra2.png';
       default:
         return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
+        
     }
   }
 
