@@ -12,23 +12,15 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, #d9cdb8, #b3a387);
+    background-color: #403924;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
 }
 
-.produtos-titulo {
-    margin-left: 5%;
-    margin-top: 5%;
-    color: #443b2d;
-    font-family: 'Julius Sans One';
-    font-size: 60px;
-    font-weight: normal;
-}
 
 .lista-de-produtos {
-    background-color: #403924;
+    background-color: #9e9e9edd;
     margin-left: 5%;
     margin-right: 5%;
     color: white;
@@ -38,48 +30,96 @@ body {
     font-size: 19px;
 }
 
-.digite-cep {
-    margin-left: 5%;
-    color: #443b2d;
+.container-produtos{
+    height: 45vh;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #DDDD;
+    margin-bottom: 2%;
+    border-radius: 50px;
+    width: 98%;
+    justify-self: center;
+}
+
+.container-cep{
+    height: 45vh;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #DDDD;
+    border-radius: 50px;
+    width: 98%;
+    justify-self: center;
+}
+
+#result{
+    background-color: #9e9e9edd;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 5%;
+
+}
+
+.parteEsquerdaCep{
+    display: grid;
+    grid-template-rows:10% 40% 25% 25%;
+}
+
+.inserir-cep{
+    display: grid;
+}
+
+#cepForm{
+    display: grid;
+}
+
+#cep{
+    width: 65%;
+    height: 60%;
+    border-radius: 40px;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    background-color: #e8e8e8dd;
+}
+
+.cep-nome{
+    display: none;
+}
+
+
+#buscar{
+    width: 40%;
+    height: 50%;
+    border: none;
+    border-radius: 20px;
+    justify-self: center;
+    background-color: #e8e8e8dd;
+    font-size: 120%;
+}
+
+.digite-cep{
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    flex-wrap: wrap;
     font-family: 'Julius Sans One';
-    font-size: 60px;
-    font-weight: normal;
 }
 
-/* .inserir-cep {
-    margin-left: 40%;
-    margin-right: 40%;
-} */
-
-.cep-nome {
-    font-size: 20px;
-    font-family: 'Inter';
-    color: #443b2d;
-    margin-left: 5%;
+.produtos-titulo{
+    font-family: 'Julius Sans one';
+    align-self: flex-end;
 }
 
-#cep {
-    background-color: #403924;
-    color: white;
-    border: 2px solid #302a1a;
-    border-radius: 5px;
-
+.parteEsquerda{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
 }
 
-#buscar {
-    background-color: #403924;
-    color: white;
-    border-radius: 5px;
-    font-family: 'Inter';
+.parteEsquerda p{
+    margin: 0;
 }
 
-#confirmPurchase {
-    font-size: 25px;
-    border-radius: 5px;
-    background-color: #403924;
-    color: white;
-}
-
-.result p{
-    
+.container-geral{
+    display: grid;
 }

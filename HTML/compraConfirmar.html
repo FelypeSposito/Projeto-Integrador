@@ -9,18 +9,48 @@
 </head>
 
 <body>
-    <h1 class="produtos-titulo">SEUS PRODUTOS:</h1>
-    <p class="lista-de-produtos"></p>
-    <h1 class="digite-cep">Digite seu CEP para calcularmos seu frete</h1>
-    <div class="inserir-cep">
-        <form id="cepForm">
-            <label for="cep" class="cep-nome">CEP:</label>
-            <input type="text" id="cep" name="cep" maxlength="9" required>
-            <button type="submit" id="buscar">Buscar</button>
-        </form>
-    </div>
-    <div id="result" class="result"></div>
+    
+    
 
+
+
+<div class="container-geral">
+    <div class="container-produtos">
+
+        <div class="parteEsquerda">
+            <h1 class="produtos-titulo">Confira seus produtos:</h1>
+            <p><small>(atenção: a Vivi-Velas não se responsabiliza por compras feitas erradas.)</small></p>
+        </div>
+
+        <div class="parteDireita">
+            <p class="lista-de-produtos"></p>
+        </div>
+
+    </div>
+
+
+    <div class="container-cep">
+
+        <div class="parteEsquerdaCep"><div class="a"></div>
+            <h1 class="digite-cep">Calcule seu CEP</h1>
+            <div class="inserir-cep">
+                <form id="cepForm">
+                    <label for="cep" class="cep-nome"></label>
+                    <input type="text" id="cep" name="cep" maxlength="9" required>
+                    
+                </form>
+                
+            </div>
+            
+            <button type="submit" id="buscar">Buscar</button>
+        
+        </div>
+
+        <div class="parteDireita">
+            <div id="result" class="result"></div></div>
+
+    </div>
+</div>
     
     <script src="../JS/compraConfirmar.js"></script>
     <script src="../JS/carrinho.js"></script>
