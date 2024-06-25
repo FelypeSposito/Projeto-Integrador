@@ -17,19 +17,38 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
+    margin: 0;
 }
 
-.container{
-    height: 100%;
-    min-height: 100vh;
+.container {
+    min-height: 100vh; /* Garante que o container ocupe toda a altura da viewport */
     background-color: #D9D9D9;
     width: 70%;
     justify-self: center;
     margin-top: 2%;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto 1fr; /* Divide o container em duas áreas, a primeira auto (altura automática) e a segunda flexível */
 }
 
-.cont-grid{
+.cont-grid {
     display: grid;
+}
+
+.container-prod {
+    padding: 20px;
+    overflow-y: auto; /* Adiciona scroll vertical caso a lista seja muito grande */
+}
+
+.parteEsquerdaCep {
+    padding: 20px;
+}
+
+.produtos-titulo {
+    font-family: 'Julius Sans One';
+}
+
+.lista-de-produtos {
+    font-family: 'Inter';
+    padding-left: 20px; /* Adiciona um recuo à esquerda para os itens da lista */
+    margin-bottom: 20px; /* Espaço máximo de 20px na parte inferior */
 }
