@@ -1968,3 +1968,7 @@ footer .newsletter i {
 /*End Home Page Responsive*/
 
 /* fim footer */
+#botao-sem-fundo{
+  background-color: transparent;
+  border: none;
+}
