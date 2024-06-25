@@ -1961,4 +1961,8 @@ footer .newsletter i {
 #botao-sem-fundo{
   background-color: transparent;
   border: none;
+}.btn a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Julius Sans One';
 }

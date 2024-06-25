@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="../CSS/compraConfirmar.css">
+</head>
+
+<body>
+    <h1 class="produtos-titulo">SEUS PRODUTOS:</h1>
+    <p class="lista-de-produtos"></p>
+    <h1 class="digite-cep">Digite seu CEP para calcularmos seu frete</h1>
+    <div class="inserir-cep">
+        <form id="cepForm">
+            <label for="cep" class="cep-nome">CEP:</label>
+            <input type="text" id="cep" name="cep" maxlength="9" required>
+            <button type="submit" id="buscar">Buscar</button>
+        </form>
+    </div>
+    <div id="result" class="result"></div>
+
+    <script src="../JS/compraConfirmar.js"></script>
+    <script src="../JS/carrinho.js"></script>
+</body>
+
+</html>

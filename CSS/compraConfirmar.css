@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Inter';
+    margin-left: 5%;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #d9cdb8, #b3a387);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.produtos-titulo {
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #443b2d;
+    font-family: 'Julius Sans One';
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.lista-de-produtos {
+    background-color: #403924;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-size: 19px;
+}
+
+.digite-cep {
+    margin-left: 5%;
+    color: #443b2d;
+    font-family: 'Julius Sans One';
+    font-size: 60px;
+    font-weight: normal;
+}
+
+/* .inserir-cep {
+    margin-left: 40%;
+    margin-right: 40%;
+} */
+
+.cep-nome {
+    font-size: 20px;
+    font-family: 'Inter';
+    color: #443b2d;
+    margin-left: 5%;
+}
+
+#cep {
+    background-color: #403924;
+    color: white;
+    border: 2px solid #302a1a;
+    border-radius: 5px;
+
+}
+
+#buscar {
+    background-color: #403924;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Inter';
+}
+
+#confirmPurchase {
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #403924;
+    color: white;
+}
