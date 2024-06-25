@@ -17,14 +17,7 @@ html {
 }
 
 body {
-  background: rgba(37,44,65,1);
-  background: -moz-linear-gradient(top, rgba(37,44,65,1) 0%, rgba(37,44,65,1) 60%, rgba(221,223,230,1) 60%, rgba(221,223,230,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(37,44,65,1)), color-stop(60%, rgba(37,44,65,1)), color-stop(60%, rgba(221,223,230,1)), color-stop(100%, rgba(221,223,230,1)));
-  background: -webkit-linear-gradient(top, rgba(37,44,65,1) 0%, rgba(37,44,65,1) 60%, rgba(221,223,230,1) 60%, rgba(221,223,230,1) 100%);
-  background: -o-linear-gradient(top, rgba(37,44,65,1) 0%, rgba(37,44,65,1) 60%, rgba(221,223,230,1) 60%, rgba(221,223,230,1) 100%);
-  background: -ms-linear-gradient(top, rgba(37,44,65,1) 0%, rgba(37,44,65,1) 60%, rgba(221,223,230,1) 60%, rgba(221,223,230,1) 100%);
-  background: linear-gradient(to bottom, rgba(37,44,65,1) 0%, rgba(37,44,65,1) 60%, rgba(221,223,230,1) 60%, rgba(221,223,230,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252c41', endColorstr='#dddfe6', GradientType=0 );
+  background-color: #d9cdb8;
 }
 
 .subject {
@@ -316,8 +309,8 @@ button:focus { outline:0; }
   right: 0px;
   bottom: -68px;
   padding: 10px 20px;
-  background-color: #f1404b;
-  border: 1px solid #f1404b;
+  background-color: #403924;
+  border: 1px solid #403924;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -332,8 +325,8 @@ button:focus { outline:0; }
 }
 
 .button-cta:hover {
-  background: rgba(193,14,26,1);
-  border: 1px solid rgba(193,14,26,1);
+  background: #403924bd;
+  border: 1px solid #403924bd
 }
 
 .button-cta span {
