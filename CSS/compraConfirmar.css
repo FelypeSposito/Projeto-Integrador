@@ -31,24 +31,25 @@ body {
 }
 
 .container-produtos{
-    height: 45vh;
+    height: 100%;
+    min-height: 45vh;
     display: grid;
     grid-template-columns: 35% 65%;
     background-color: #DDDD;
-    margin-bottom: 2%;
     border-radius: 50px;
     width: 98%;
     justify-self: center;
 }
 
 .container-cep{
-    height: 45vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 35% 65%;
     background-color: #DDDD;
     border-radius: 50px;
     width: 98%;
     justify-self: center;
+    min-height: 45vh;
 }
 
 #result{
@@ -73,8 +74,8 @@ body {
 }
 
 #cep{
-    width: 65%;
-    height: 60%;
+    width: 25vw;
+    height: 7vh;
     border-radius: 40px;
     align-self: center;
     justify-self: center;
@@ -86,12 +87,16 @@ body {
     display: none;
 }
 
+#cep{
+    font-size: 150%;
+}
+
 
 #buscar{
-    width: 40%;
-    height: 50%;
+    width: 15vw;
+    height: 6vh;
     border: none;
-    border-radius: 20px;
+    border-radius: 40px;
     justify-self: center;
     background-color: #e8e8e8dd;
     font-size: 120%;
@@ -122,4 +127,5 @@ body {
 
 .container-geral{
     display: grid;
+    gap: 30px;
 }
