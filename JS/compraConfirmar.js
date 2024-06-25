@@ -1,10 +1,9 @@
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     function formatCep(cep) {
         return cep.replace(/\D/g, '');
     }
 
-    document.getElementById('cepForm').addEventListener('submit', function(event) {
+    document.getElementById('cepForm').addEventListener('submit', function (event) {
         event.preventDefault();
 
         const cepInput = document.getElementById('cep');
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <button id="confirmPurchase">Confirmar Compra</button>
                     `;
 
-                    document.getElementById('confirmPurchase').addEventListener('click', function() {
+                    document.getElementById('confirmPurchase').addEventListener('click', function () {
                         const userConfirmed = confirm('Você deseja confirmar essa compra?');
                         if (userConfirmed) {
                             alert('Compra feita com sucesso!');
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     });
 
-    document.getElementById('cep').addEventListener('input', function(event) {
+    document.getElementById('cep').addEventListener('input', function (event) {
         let value = event.target.value.replace(/\D/g, '');
         if (value.length > 5) {
             value = value.slice(0, 5) + '-' + value.slice(5);
@@ -82,35 +81,19 @@ document.addEventListener('DOMContentLoaded', function() {
         let totalPrice = cart.reduce((total, item) => total + item.price, 0);
         return totalPrice + frete;
     }
-});
-// Mock de itens para simular um carrinho (pode ser substituído por dados reais)
-let cart = [
-    { id: 1, nome: 'Vela Perfumada', preco: 29.90 },
-    { id: 2, nome: 'Incenso de Lavanda', preco: 12.50 }
-];
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Função para exibir os produtos do carrinho na interface
-    function exibirProdutosNoCarrinho() {
-        const listaProdutos = document.getElementById('lista-produtos');
-        listaProdutos.innerHTML = ''; // Limpa a lista antes de atualizar
+    // Carregar itens do carrinho na lista de produtos
+    function carregarItensCarrinho() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const listaProdutos = document.querySelector('.lista-de-produtos');
 
+        listaProdutos.innerHTML = '';
         cart.forEach(item => {
             const li = document.createElement('li');
-            li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+            li.textContent = `${item.nome} - R$ ${item.price.toFixed(2)}`;
             listaProdutos.appendChild(li);
         });
     }
 
-    // Chamada inicial para exibir os produtos do carrinho ao carregar a página
-    exibirProdutosNoCarrinho();
-
-    // Função para adicionar um novo item ao carrinho
-    function adicionarAoCarrinho(item) {
-        cart.push(item);
-        exibirProdutosNoCarrinho();
-    }
-
-    // Exemplo de adicionar um item ao carrinho (pode ser chamado em outras partes do código)
-    // adicionarAoCarrinho({ id: 3, nome: 'Aromatizador de Ambiente', preco: 19.99 });
+    carregarItensCarrinho(); // Chamar a função para carregar os itens do carrinho ao carregar a página
 });
