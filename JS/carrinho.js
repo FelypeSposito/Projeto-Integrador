@@ -83,20 +83,49 @@ document.addEventListener('DOMContentLoaded', function() {
     switch (productName) {
       case 'Produto 1':
         return '../IMG/rechaud.jpeg';
+
       case 'Produto 2':
         return '../IMG/velaextraM.png';
+
       case 'Produto 3':
         return '../IMG/velas2.JPG';
+
         case 'Vela Aromática de Massagem':
           return '../IMG/velaextra2.png';
+
           case 'Vela Aromática | Mensagem Secreta':
             return '../IMG/velas5.JPG';
+
             case 'Vela Aromática Artesanal':
               return '../IMG/velaextra.png';
+
               case 'Rechaud':
                 return '../IMG/rechaud.jpeg';
+
                 case 'Kit Wax Melts + Rechaud':
                   return '../IMG/wax-melts.png';
+
+                  case 'Wax Melts - Limão Siciliano':
+                    return '../IMG/velas2.JPG';
+                    
+                    case 'Kit 4 Velas + Brinde':
+                      return '../IMG/kit4velasM.jpg';
+
+                      case 'Vela Aromática Artesanal':
+                        return '../IMG/velamassageadora3.png.jpg';
+
+                        case 'Vela Aromática - Café Torrado':
+                          return '../IMG/velacafe3M.jpg';
+
+                          case 'Refil Vela Aromática':
+                            return '../IMG/refilM.jpg';
+
+                            case 'Kit 3 Velas Aromáticas Artesanais':
+                              return '../IMG/velamassageadora3.png.jpg';
+
+                              case 'Vela Aromática Artesanal - Vanilla Black':
+                                return '../IMG/velavanillaS.jpg';
+                        
       default:
         return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
         
@@ -104,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   
-
+  
   // Atualiza o carrinho ao carregar a página
   updateCart();
 });
