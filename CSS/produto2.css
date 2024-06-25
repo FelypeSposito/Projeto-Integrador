@@ -1929,3 +1929,8 @@ footer .newsletter i {
 
 /* fim footer */
 
+
+#botao-sem-fundo{
+  background-color: transparent;
+  border: none;
+}

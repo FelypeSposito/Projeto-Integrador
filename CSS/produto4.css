@@ -1958,3 +1958,7 @@ footer .newsletter i {
   font-size: 9px;
   justify-self: center;
 } */
+#botao-sem-fundo{
+  background-color: transparent;
+  border: none;
+}

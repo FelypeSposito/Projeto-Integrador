@@ -1930,3 +1930,7 @@ footer .newsletter i {
     background-color: #403924;
     color: white;
 }
+#botao-sem-fundo{
+  background-color: transparent;
+  border: none;
+}

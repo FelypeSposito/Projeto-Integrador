@@ -87,15 +87,23 @@ document.addEventListener('DOMContentLoaded', function() {
         return '../IMG/velaextraM.png';
       case 'Produto 3':
         return '../IMG/velas2.JPG';
-        case 'Vela Aromática Massageadora':
+        case 'Vela Aromática de Massagem':
           return '../IMG/velaextra2.png';
           case 'Vela Aromática | Mensagem Secreta':
             return '../IMG/velas5.JPG';
+            case 'Vela Aromática Artesanal':
+              return '../IMG/velaextra.png';
+              case 'Rechaud':
+                return '../IMG/rechaud.jpeg';
+                case 'Kit Wax Melts + Rechaud':
+                  return '../IMG/wax-melts.png';
       default:
         return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
         
     }
   }
+
+  
 
   // Atualiza o carrinho ao carregar a página
   updateCart();
