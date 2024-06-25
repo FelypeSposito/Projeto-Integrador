@@ -41,6 +41,12 @@ ul {
   height: 12.5vh;
   display: grid;
   grid-template-columns: 10% 80% 10%;
+  background-color: #272314;
+  transition: all 1s ease;
+}
+
+.produtos-em-destaque-container:hover{
+  background-color: #000;
 }
 
 .espaco-navbar {
@@ -60,13 +66,13 @@ ul {
 
 
 #titulo-redirecionamento-quem-somos{
-  color: black;
+  color: #6e6548;
   text-decoration: underline 1px;
   transition: all 0.5s ease;
 }
 
 #titulo-redirecionamento-quem-somos:hover{
-  color: #6e6548;
+  color: black;
 }
 
 .espaco-quem-somos {
@@ -74,7 +80,11 @@ ul {
   align-items: center;
   justify-content: center;
   height: 12vh;
-  background-color: transparent;
+  background-color: #262214;
+}
+
+.espaco-quem-somos:hover{
+  background-color: #5a533a;
 }
 
 .linha-c {
@@ -89,11 +99,12 @@ ul {
 }
 
 .titulo-produtos-em-destaque {
-  align-self: flex-end;
+  align-self: center;
   justify-self: center;
   grid-column: 2;
   font-family: "Julius Sans One";
   font-size: 200%;
+  
 }
 
 .titulo-produtos-em-destaque a{
@@ -102,13 +113,13 @@ ul {
   grid-column: 2;
   font-family: "Julius Sans One";
   font-size: 100%;
-  color: #000;
-  text-decoration: underline 1px;
+  color: #70674b;
+  text-decoration: none;
   transition: color 0.5s ease;
 }
 
 .titulo-produtos-em-destaque a:hover{
-  color: #756a48;
+  color: #c7b88b;
 }
 
 @mixin aspect-ratio($width, $height) {
@@ -1210,7 +1221,7 @@ ul {
   padding-bottom: 25px;
   border-radius: 100px;
   margin: 50px;
-  margin-top: 0;
+  margin-top: 20px;
   border: 1px solid #403924;
   transition: all 1s ease;
 }
