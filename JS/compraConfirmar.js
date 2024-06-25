@@ -83,3 +83,34 @@ document.addEventListener('DOMContentLoaded', function() {
         return totalPrice + frete;
     }
 });
+// Mock de itens para simular um carrinho (pode ser substituído por dados reais)
+let cart = [
+    { id: 1, nome: 'Vela Perfumada', preco: 29.90 },
+    { id: 2, nome: 'Incenso de Lavanda', preco: 12.50 }
+];
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para exibir os produtos do carrinho na interface
+    function exibirProdutosNoCarrinho() {
+        const listaProdutos = document.getElementById('lista-produtos');
+        listaProdutos.innerHTML = ''; // Limpa a lista antes de atualizar
+
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+            listaProdutos.appendChild(li);
+        });
+    }
+
+    // Chamada inicial para exibir os produtos do carrinho ao carregar a página
+    exibirProdutosNoCarrinho();
+
+    // Função para adicionar um novo item ao carrinho
+    function adicionarAoCarrinho(item) {
+        cart.push(item);
+        exibirProdutosNoCarrinho();
+    }
+
+    // Exemplo de adicionar um item ao carrinho (pode ser chamado em outras partes do código)
+    // adicionarAoCarrinho({ id: 3, nome: 'Aromatizador de Ambiente', preco: 19.99 });
+});
