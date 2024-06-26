@@ -17,16 +17,25 @@
     <div id="cart-total" class="cart-total">
       <p>Total: R$ <span id="total">0.00</span></p>
     </div>
+
+    <!-- Formulário de entrega -->
+    <div id="delivery-info" style="display: none;">
+      <h2>Informações de Entrega</h2>
+      <div id="shipping-details"></div>
+    </div>
+    <form id="delivery-form">
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" pattern="[0-9]{8}" maxlength="8" placeholder="Digite o CEP (apenas números)" required>
+      <button type="submit">Calcular Frete</button>
+    </form>
+
     <!-- Botões para navegar entre páginas -->
     <div class="navigation-buttons">
       <button onclick="window.location.href='../index.html'">Voltar aos Produtos</button>
-      <button onclick="window.location.href='confirmacao.HTML'">Confirmar Compra</button>
+      <button id="confirmar-compra" onclick="window.location.href='confirmacao.HTML'" disabled style="opacity: 0.5;">Confirmar Compra</button>
     </div>
   </div>
 
   <script src="../JS/carrinho.js"></script>
 </body>
 </html>
-
-
-<!-- comentario para commit -->

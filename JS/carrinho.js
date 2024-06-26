@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const addToCartButtons = document.querySelectorAll('.add-to-cart');
   const cartList = document.getElementById('cart-list');
   const cartTotal = document.getElementById('total');
+  const deliveryForm = document.getElementById('delivery-form');
+  const shippingDetails = document.getElementById('shipping-details');
+  const deliveryInfo = document.getElementById('delivery-info');
+  const confirmarCompraButton = document.getElementById('confirmar-compra');
 
   // Adicionar evento de clique para adicionar ao carrinho
   addToCartButtons.forEach(button => {
@@ -23,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push({ name, price, description });
     localStorage.setItem('cart', JSON.stringify(cart));
-    updateProductList();
+    updateCart();
   }
 
   // Atualiza o carrinho na página carrinho.html
@@ -79,75 +83,101 @@ document.addEventListener('DOMContentLoaded', function() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart = cart.filter(item => item.name !== name);
     localStorage.setItem('cart', JSON.stringify(cart));
-    updateProductList();
+    updateCart();
   }
 
+  // Função para calcular o frete com base no CEP
+  deliveryForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const cepInput = document.getElementById('cep');
+    const cep = cepInput.value.trim();
+
+    // Validação do formato do CEP brasileiro
+    if (!isValidBrazilianCEP(cep)) {
+      alert('Por favor, insira um CEP válido.');
+      return;
+    }
+
+    // Consulta à API ViaCEP para obter informações do CEP
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.erro) {
+          alert('CEP não encontrado. Por favor, verifique o CEP digitado.');
+          return;
+        }
+
+        // Monta o endereço formatado
+        const addressInfo = `${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`;
+
+        // Simulação de cálculo de frete (exemplo)
+        const shippingCost = calculateShippingCost(cep);
+
+        // Exibe os detalhes do frete e atualiza o botão de confirmar compra
+        shippingDetails.innerHTML = `
+          <p><strong>Endereço:</strong> ${addressInfo}</p>
+          <p>Custo de Frete: R$ ${shippingCost.toFixed(2)}</p>
+          <p>Total com Frete: R$ ${(parseFloat(cartTotal.textContent) + shippingCost).toFixed(2)}</p>
+        `;
+        deliveryInfo.style.display = 'block';
+        confirmarCompraButton.disabled = false;
+        confirmarCompraButton.style.opacity = 1; // Torna o botão completamente visível
+      })
+      .catch(error => {
+        console.error('Erro ao obter informações do CEP:', error);
+        alert('Erro ao obter informações do CEP. Por favor, tente novamente.');
+      });
+  });
+
+  // Função para validar o formato do CEP brasileiro (8 dígitos numéricos)
+  function isValidBrazilianCEP(cep) {
+    const cepPattern = /^\d{8}$/;
+    return cepPattern.test(cep);
+  }
+
+  // Simulação de cálculo de frete (exemplo)
+  function calculateShippingCost(cep) {
+    // Implemente aqui a lógica para calcular o frete com base no CEP
+    // Exemplo simples
+    return 10.00; // Valor fixo para o exemplo
+  }
+
+  // Função para obter a imagem do produto
   function getProductImage(productName) {
     switch (productName) {
       case 'Produto 1':
         return '../IMG/rechaud.jpeg';
-
       case 'Produto 2':
         return '../IMG/velaextraM.png';
-
       case 'Produto 3':
         return '../IMG/velas2.JPG';
-
-        case 'Vela Aromática de Massagem':
-          return '../IMG/velaextra2.png';
-
-          case 'Vela Aromática | Mensagem Secreta':
-            return '../IMG/velas5.JPG';
-
-            case 'Vela Aromática Artesanal':
-              return '../IMG/velaextra.png';
-
-              case 'Rechaud':
-                return '../IMG/rechaud.jpeg';
-
-                case 'Kit Wax Melts + Rechaud':
-                  return '../IMG/wax-melts.png';
-
-                  case 'Wax Melts - Limão Siciliano':
-                    return '../IMG/velas2.JPG';
-                    
-                    case 'Kit 4 Velas + Brinde':
-                      return '../IMG/kit4velasM.jpg';
-
-                      case 'Vela Aromática Artesanal':
-                        return '../IMG/velamassageadora3.png.jpg';
-
-                        case 'Vela Aromática - Café Torrado':
-                          return '../IMG/velacafe3M.jpg';
-
-                          case 'Refil Vela Aromática':
-                            return '../IMG/refilM.jpg';
-
-                            case 'Kit 3 Velas Aromáticas Artesanais':
-                              return '../IMG/velamassageadora3.png.jpg';
-
-                              case 'Vela Aromática Artesanal - Vanilla Black':
-                                return '../IMG/velamassageadora3.png.jpg';
-                        
+      case 'Vela Aromática de Massagem':
+        return '../IMG/velaextra2.png';
+      case 'Vela Aromática | Mensagem Secreta':
+        return '../IMG/velas5.JPG';
+      case 'Vela Aromática Artesanal':
+        return '../IMG/velaextra.png';
+      case 'Rechaud':
+        return '../IMG/rechaud.jpeg';
+      case 'Kit Wax Melts + Rechaud':
+        return '../IMG/wax-melts.png';
+      case 'Wax Melts - Limão Siciliano':
+        return '../IMG/velas2.JPG';
+      case 'Kit 4 Velas + Brinde':
+        return '../IMG/kit4velasM.jpg';
+      case 'Vela Aromática Artesanal - Vanilla Black':
+        return '../IMG/velamassageadora3.png.jpg';
+      case 'Vela Aromática - Café Torrado':
+        return '../IMG/velacafe3M.jpg';
+      case 'Refil Vela Aromática':
+        return '../IMG/refilM.jpg';
+      case 'Kit 3 Velas Aromáticas Artesanais':
+        return '../IMG/velamassageadora3.png.jpg';
       default:
         return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
     }
   }
 
-  // Função para atualizar a lista de produtos e o total
-  function updateProductList() {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const productListElement = document.querySelector('.lista-de-produtos');
-    const productNames = cart.map(item => item.name).join(', ') + '.';
-    const totalPrice = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
-
-    if (productListElement) {
-      productListElement.innerHTML = `Produtos: ${productNames} <br> Total: R$ ${totalPrice}`;
-    }
-  }
-
   // Atualiza o carrinho ao carregar a página
   updateCart();
-  // Atualiza a lista de produtos ao carregar a página
-  updateProductList();
 });
