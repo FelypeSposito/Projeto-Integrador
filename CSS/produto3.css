@@ -1761,7 +1761,7 @@ footer {
   font-family: Cabin, sans-serif;
 }
 .fa-asterisk, .a-CTA, h2, header .navigation-bar a:hover, header nav.active .navigation-bar a:hover, footer .social-media .links a:hover, .copyright .info li a, .copyright .CTA li a:hover {
-  color: #47412d;
+  color: #00a2ff;
 }
 header nav .navigation-bar .underline, header .text .button button:hover, .contact .form form button:hover, .contact .text i:hover {
   background-color: #403924;
