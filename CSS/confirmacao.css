@@ -1,3 +1,7 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 /*--------------------
 General Style
 ---------------------*/
@@ -18,6 +22,8 @@ html {
 
 body {
   background-color: #d9cdb8;
+  margin: 0;
+  padding: 0;
 }
 
 .subject {
@@ -325,8 +331,8 @@ button:focus { outline:0; }
 }
 
 .button-cta:hover {
-  background: #403924bd;
-  border: 1px solid #403924bd
+  background: #7c704d;
+  border: 1px solid #7c704d
 }
 
 .button-cta span {
@@ -444,3 +450,113 @@ Credits
 }
 
 
+.container{
+  height: 100vh;
+}
+
+@media screen and (min-width: 670px){
+  .containerR{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px){
+  .container{
+    display: none;
+  }
+
+  .containerR{
+    height: 100vh;
+  }
+ 
+  .dadosCartao{
+    min-height: 80vh;
+    margin: 5%;
+    border-radius: 20px;
+    background-color: #fff;
+    padding-top: 5px;
+  }
+  
+  .botaoComprar{
+    
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  float: right;
+  right: 0px;
+  bottom: -68px;
+  padding: 10px 20px;
+  background-color: #403924;
+  border: 1px solid #403924;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #f4f5f9;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+          font-size: 120%;
+          display: grid;
+  }
+
+  .botaoComprar{
+    align-content: center;
+    justify-items: center;
+    font-family: 'Julius Sans One';
+  }
+
+
+
+  .botaoComprar:hover {
+  background: #7c704d;
+  border: 1px solid #7c704d
+}
+
+.botaoComprar span {
+  display: inline-block;
+  position: relative;
+  
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.botaoComprar span:after {
+  content: '→';
+  color: #f4f5f9;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -40px;
+}
+
+.botaoComprar:hover span {
+  padding-right: 45px;
+}
+
+.botaoComprar:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.card-form > p.field {
+  height: 48px;
+  padding: 0px;
+  margin-bottom: 0px;
+  padding-left: 2px;
+  background-color: #f4f5f9;
+  border: 1px solid #d2d4de;
+  display: inline-block;
+  
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+
+}

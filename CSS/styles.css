@@ -86,3 +86,14 @@
 	border: none;
 	border-radius: 7px;
   }
+
+  #cep{
+	border-radius: 5px;
+	border: 1px solid;
+	background-color: #fff;
+  }
+
+  #btn-calcular{
+	border-radius: 5px;
+	border: 1px solid;
+  }
