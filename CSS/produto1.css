@@ -1978,3 +1978,21 @@ footer .newsletter i {
   text-decoration: none;
   font-family: 'Julius Sans One';
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #403924; 
+  border-radius: 5px;
+  transition: background 2s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #262214; 
+}

@@ -2882,3 +2882,22 @@ footer .newsletter i {
 /*End Home Page Responsive*/
 
 /* fim footer */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #403924; 
+  border-radius: 5px;
+  transition: background 2s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #262214; 
+}
