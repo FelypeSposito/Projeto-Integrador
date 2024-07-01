@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const shippingDetails = document.getElementById('shipping-details');
   const deliveryInfo = document.getElementById('delivery-info');
   const confirmarCompraButton = document.getElementById('confirmar-compra');
+  const orderSummary = document.querySelector('.order h5'); // Elemento para exibir o resumo da ordem
+  let shippingCost = 0; // Variável para armazenar o custo de frete
 
   // Adicionar evento de clique para adicionar ao carrinho
   addToCartButtons.forEach(button => {
@@ -75,6 +77,9 @@ document.addEventListener('DOMContentLoaded', function() {
           updateCart();
         });
       });
+    } else {
+      // Atualiza o resumo da ordem na página do cartão
+      updateOrderSummary();
     }
   }
 
@@ -87,47 +92,53 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Função para calcular o frete com base no CEP
-  deliveryForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const cepInput = document.getElementById('cep');
-    const cep = cepInput.value.trim();
+  if (deliveryForm) {
+    deliveryForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const cepInput = document.getElementById('cep');
+      const cep = cepInput.value.trim();
 
-    // Validação do formato do CEP brasileiro
-    if (!isValidBrazilianCEP(cep)) {
-      alert('Por favor, insira um CEP válido.');
-      return;
-    }
+      // Validação do formato do CEP brasileiro
+      if (!isValidBrazilianCEP(cep)) {
+        alert('Por favor, insira um CEP válido.');
+        return;
+      }
 
-    // Consulta à API ViaCEP para obter informações do CEP
-    fetch(`https://viacep.com.br/ws/${cep}/json/`)
-      .then(response => response.json())
-      .then(data => {
-        if (data.erro) {
-          alert('CEP não encontrado. Por favor, verifique o CEP digitado.');
-          return;
-        }
+      // Consulta à API ViaCEP para obter informações do CEP
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.erro) {
+            alert('CEP não encontrado. Por favor, verifique o CEP digitado.');
+            return;
+          }
 
-        // Monta o endereço formatado
-        const addressInfo = `${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`;
+          // Monta o endereço formatado
+          const addressInfo = `${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`;
 
-        // Simulação de cálculo de frete (exemplo)
-        const shippingCost = calculateShippingCost(cep);
+          // Simulação de cálculo de frete (exemplo)
+          shippingCost = calculateShippingCost(cep);
 
-        // Exibe os detalhes do frete e atualiza o botão de confirmar compra
-        shippingDetails.innerHTML = `
-          <p><strong>Endereço:</strong> ${addressInfo}</p>
-          <p>Custo de Frete: R$ ${shippingCost.toFixed(2)}</p>
-          <p>Total com Frete: R$ ${(parseFloat(cartTotal.textContent) + shippingCost).toFixed(2)}</p>
-        `;
-        deliveryInfo.style.display = 'block';
-        confirmarCompraButton.disabled = false;
-        confirmarCompraButton.style.opacity = 1; // Torna o botão completamente visível
-      })
-      .catch(error => {
-        console.error('Erro ao obter informações do CEP:', error);
-        alert('Erro ao obter informações do CEP. Por favor, tente novamente.');
-      });
-  });
+          // Exibe os detalhes do frete e atualiza o botão de confirmar compra
+          shippingDetails.innerHTML = `
+            <p><strong>Endereço:</strong> ${addressInfo}</p>
+            <p>Custo de Frete: R$ ${shippingCost.toFixed(2)}</p>
+            <p>Total com Frete: R$ ${(parseFloat(cartTotal.textContent) + shippingCost).toFixed(2)}</p>
+          `;
+          localStorage.setItem('precoDoFrete', (parseFloat(shippingCost.toFixed(2))));
+          deliveryInfo.style.display = 'block';
+          confirmarCompraButton.disabled = false;
+          confirmarCompraButton.style.opacity = 1; // Torna o botão completamente visível
+
+          // Atualiza o resumo da ordem
+          updateOrderSummary();
+        })
+        .catch(error => {
+          console.error('Erro ao obter informações do CEP:', error);
+          alert('Erro ao obter informações do CEP. Por favor, tente novamente.');
+        });
+    });
+  }
 
   // Função para validar o formato do CEP brasileiro (8 dígitos numéricos)
   function isValidBrazilianCEP(cep) {
@@ -175,6 +186,17 @@ document.addEventListener('DOMContentLoaded', function() {
         return '../IMG/velamassageadora3.png.jpg';
       default:
         return '../IMG/default-image.jpg'; // Caso haja mais produtos do que imagens definidas
+    }
+  }
+
+  // Função para atualizar o resumo da ordem
+  function updateOrderSummary() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+    let orderDetails = cart.map(item => `${item.name} - R$ ${item.price.toFixed(2)}`).join('<br>');
+    orderDetails += `<br><br>Frete: R$ ${10.00}<br>Total: R$ ${(totalPrice + 10)}`;
+    if (orderSummary) {
+      orderSummary.innerHTML = orderDetails;
     }
   }
 

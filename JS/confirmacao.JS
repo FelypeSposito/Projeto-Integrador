@@ -76,3 +76,10 @@ function addItemsToFinalize() {
 
 // Chamar a função para adicionar os itens ao carregar a página
 window.onload = addItemsToFinalize;
+
+document.getElementById('cardexpiration').addEventListener('input', function(e) {
+  let value_data = e.target.value_data;
+  if (value_data.length === 2 && !value_data.includes('/')) {
+    e.target.value_data = value + '/';
+  }
+})
