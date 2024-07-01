@@ -2921,3 +2921,7 @@ footer .newsletter i {
   background-size: cover;
 }
 
+#linkBanner{
+  height: 100%;
+  width: 100%;
+}
