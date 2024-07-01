@@ -2846,7 +2846,7 @@ footer .newsletter i {
   }
   }
 
-@media (max-width: 992px) {
+  @media (max-width: 992px) {
   body {
       padding: 0;
   }
@@ -2871,13 +2871,18 @@ footer .newsletter i {
       content: '';
   }
 
+
 }
+
+
+
 
 @media (max-width: 576px) {
   #header{
     
   height: 13vh;
   }
+
 }
 /*End Home Page Responsive*/
 
@@ -2901,3 +2906,18 @@ footer .newsletter i {
 ::-webkit-scrollbar-thumb:hover {
   background: #262214; 
 }
+
+/* .banner{
+  height: 100vh;
+  background-size: cover;
+  background-image: url('../IMG/banner2.jpg');
+  background-position: center;
+} */
+
+#bannerDiv{
+  height: 80vh;
+  background-image: url('../IMG/fundoWaxIA.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
