@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carrinho de Compras - Vivi Velas</title>
-<link rel="shortcut icon" href="../IMG/vela-icone.png" type="image/x-icon">
-<link rel="stylesheet" href="../CSS/styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Carrinho de Compras</h1>
-    <!-- Lista de itens no carrinho -->
-    <div id="cart-list" class="cart-list">
-      <!-- Aqui serão adicionados os itens do carrinho dinamicamente -->
-    </div>
-    <!-- Total -->
-    <div id="cart-total" class="cart-total">
-      <p>Total: R$ <span id="total">0.00</span></p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras - Vivi Velas</title>
+    <link
+      rel="shortcut icon"
+      href="../IMG/vela-icone.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Carrinho de Compras</h1>
+      <!-- Lista de itens no carrinho -->
+      <div id="cart-list" class="cart-list">
+        <!-- Aqui serão adicionados os itens do carrinho dinamicamente -->
+      </div>
+      <!-- Total -->
+      <div id="cart-total" class="cart-total">
+        <p>Total: R$ <span id="total">0.00</span></p>
+      </div>
 
-    <!-- Formulário de entrega -->
-    <div id="delivery-info" style="display: none;">
-      <h2>Informações de Entrega</h2>
-      <div id="shipping-details"></div>
-    </div>
-    <form id="delivery-form">
-      <label for="cep">CEP:</label>
-      <input type="text" id="cep" name="cep" pattern="[0-9]{8}" maxlength="8" placeholder="Digite o CEP (apenas números)" required>
-      <button type="submit" id="btn-calcular">Calcular</button>
-    </form>
+      <!-- Formulário de entrega -->
+      <div id="delivery-info" style="display: none">
+        <h2>Informações de Entrega</h2>
+        <div id="shipping-details"></div>
+      </div>
+      <form id="delivery-form">
+        <label for="cep">CEP:</label>
+        <input
+          type="text"
+          id="cep"
+          name="cep"
+          pattern="[0-9]{8}"
+          maxlength="8"
+          placeholder="Digite o CEP (apenas números)"
+          required
+        />
+        <button type="submit" id="btn-calcular">Calcular</button>
+      </form>
 
-    <!-- Botões para navegar entre páginas -->
-    <div class="navigation-buttons">
-      <button onclick="window.location.href='../index.html'">Voltar aos Produtos</button>
-      <button id="confirmar-compra" onclick="window.location.href='confirmacao.HTML'" disabled style="opacity: 0.5;">Confirmar Compra</button>
-    </div>
-  </div>
-
-  <script src="../JS/carrinho.js"></script>
-
-  <body> <!-- Inicio do corpo da página -->
-
-    ... <!-- Conteúdo da página -->
-  
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
+      <!-- Botões para navegar entre páginas -->
+      <div class="navigation-buttons">
+        <button onclick="window.location.href='../index.html'">
+          Voltar aos Produtos
+        </button>
+        <button
+          id="confirmar-compra"
+          onclick="window.location.href='confirmacao.HTML'"
+          disabled
+          style="opacity: 0.5"
+        >
+          Confirmar Compra
+        </button>
       </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-  </body> <!-- Fim do corpo da página -->
-</body>
+
+    <script src="../JS/carrinho.js"></script>
+
+    <body>
+      <!-- Inicio do corpo da página -->
+
+      ...
+      <!-- Conteúdo da página -->
+
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+    </body>
+    <!-- Fim do corpo da página -->
+  </body>
 </html>

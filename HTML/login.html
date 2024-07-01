@@ -1,117 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Vivi Velas</title>
+    <link
+      rel="shortcut icon"
+      href="../IMG/vela-icone.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/login.css" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login - Vivi Velas</title>
-    <link rel="shortcut icon" href="../IMG/vela-icone.png" type="image/x-icon">
-	<link rel="stylesheet" href="../CSS/login.css">
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <!--Fonts-->
 
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
-	<!--Fonts-->
+    <!--FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <!--FontAwesome-->
+  </head>
 
-	<!--FontAwesome-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-		integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<!--FontAwesome-->
-</head>
-
-<body>
-
-
-
-	<div id="header">
-		<nav>
-			<div class="logo">
-				<a href="../index.html"><img src="../IMG/logovivibrancapequena-removebg-preview.png" height="70px"
-						alt="Login - Vivi Velas Aromáticas"></a>
-			</div>
-			<div class="toggle">
-				<span class="first"></span>
-				<span class="middle"></span>
-				<span class="last"></span>
-			</div>
-			<div class="navigation-bar">
-				<ul>
-                    <li ><a href="../index.html">Início<span class="underline"></span></a></li>
-                    <li ><a href="../index.html">Produtos<span class="underline"></span></a></li>
-                    <li ><a href="QuemSomos.html">Sobre<span class="underline"></span></a></li>
-                    <li class="active" ><a href="login.html">Perfil<span class="underline"></span></a></li>
-                    <li ><a href="carrinho.html">Carrinho<span class="underline"></span></a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-
-
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1 style="color: black;">Crie sua conta</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-google"></i></a>
-                    <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social"><i class="fab fa-apple"></i></a>
-                </div>
-                <span>ou use seu email para registrar</span>
-                <input type="text" placeholder="Nome" id="nome-criar"/>
-                <input type="email" placeholder="Email" id="email-criar"/>
-                <input type="password" placeholder="Senha" id="senha-criar"/>
-                <button id="botao-criar" onclick="signInFunction(); return false">Criar</button>
-            </form>
+  <body>
+    <div id="header">
+      <nav>
+        <div class="logo">
+          <a href="../index.html"
+            ><img
+              src="../IMG/logovivibrancapequena-removebg-preview.png"
+              height="70px"
+              alt="Login - Vivi Velas Aromáticas"
+          /></a>
         </div>
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1 style="color: black;">Entrar</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-google"></i></a>
-                    <a href="#" class="social"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social"><i class="fab fa-apple"></i></a>
-                </div>
-                <span>ou use sua conta</span>
-                <input type="email" placeholder="Email" id="email-logar"/>
-                <input type="password" placeholder="Senha" id="senha-logar"/>
-                <a href="#">Esqueceu sua senha?</a>
-                <button id="botao-avancar" onclick="logInFunction()">Avançar</button>
-            </form>
+        <div class="toggle">
+          <span class="first"></span>
+          <span class="middle"></span>
+          <span class="last"></span>
         </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Bem-vindo!</h1>
-                    <p>Já possui conta? Clique aqui para colocar suas informações</p>
-                    <button class="ghost" id="signIn">Entrar</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Não possui conta?</h1>
-                    <p>Crie sua conta para ficar por dentro do nosso trabalho.</p>
-                    <button class="ghost" id="signUp">Criar conta</button>
-                </div>
-            </div>
+        <div class="navigation-bar">
+          <ul>
+            <li>
+              <a href="../index.html">Início<span class="underline"></span></a>
+            </li>
+            <li>
+              <a href="../index.html"
+                >Produtos<span class="underline"></span
+              ></a>
+            </li>
+            <li>
+              <a href="QuemSomos.html">Sobre<span class="underline"></span></a>
+            </li>
+            <li class="active">
+              <a href="login.html">Perfil<span class="underline"></span></a>
+            </li>
+            <li>
+              <a href="carrinho.html"
+                >Carrinho<span class="underline"></span
+              ></a>
+            </li>
+          </ul>
         </div>
+      </nav>
     </div>
 
-
-
-	<script src="../JS/login.js"></script>
-
-    <body> <!-- Inicio do corpo da página -->
-
-        ... <!-- Conteúdo da página -->
-      
-        <div vw class="enabled">
-          <div vw-access-button class="active"></div>
-          <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1 style="color: black">Crie sua conta</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-google"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social"><i class="fab fa-apple"></i></a>
+          </div>
+          <span>ou use seu email para registrar</span>
+          <input type="text" placeholder="Nome" id="nome-criar" />
+          <input type="email" placeholder="Email" id="email-criar" />
+          <input type="password" placeholder="Senha" id="senha-criar" />
+          <button id="botao-criar" onclick="signInFunction(); return false">
+            Criar
+          </button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1 style="color: black">Entrar</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-google"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social"><i class="fab fa-apple"></i></a>
+          </div>
+          <span>ou use sua conta</span>
+          <input type="email" placeholder="Email" id="email-logar" />
+          <input type="password" placeholder="Senha" id="senha-logar" />
+          <a href="#">Esqueceu sua senha?</a>
+          <button id="botao-avancar" onclick="logInFunction()">Avançar</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Bem-vindo!</h1>
+            <p>Já possui conta? Clique aqui para colocar suas informações</p>
+            <button class="ghost" id="signIn">Entrar</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Não possui conta?</h1>
+            <p>Crie sua conta para ficar por dentro do nosso trabalho.</p>
+            <button class="ghost" id="signUp">Criar conta</button>
           </div>
         </div>
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-          new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
-      </body> <!-- Fim do corpo da página -->
-</body>
+      </div>
+    </div>
 
+    <script src="../JS/login.js"></script>
+
+    <body>
+      <!-- Inicio do corpo da página -->
+
+      ...
+      <!-- Conteúdo da página -->
+
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+    </body>
+    <!-- Fim do corpo da página -->
+  </body>
 </html>

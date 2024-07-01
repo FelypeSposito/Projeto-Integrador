@@ -5,154 +5,148 @@
 @import url("https://fonts.googleapis.com/css2?family=Junge&display=swap");
 
 .result {
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: 'Inter';
-    margin-left: 5%;
-    color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Inter";
+  margin-left: 5%;
+  color: white;
 }
 
 body {
-    background-color: #d6c8b0;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
+  background-color: #d6c8b0;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
 }
-
 
 .lista-de-produtos {
-    background-color: #737373dd;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: 'Inter';
-    font-size: 19px;
+  background-color: #737373dd;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-size: 19px;
 }
 
-.container-produtos{
-    height: 100%;
-    min-height: 45vh;
-    display: grid;
-    grid-template-columns: 35% 65%;
-    background-image: linear-gradient(to bottom right,  #DDD, #919191);
-    border-radius: 50px;
-    width: 98%;
-    justify-self: center;
+.container-produtos {
+  height: 100%;
+  min-height: 45vh;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-image: linear-gradient(to bottom right, #ddd, #919191);
+  border-radius: 50px;
+  width: 98%;
+  justify-self: center;
 }
 
-.container-cep{
-    height: 100%;
-    display: grid;
-    grid-template-columns: 35% 65%;
-    background-image: linear-gradient(to bottom right, #DDD, #878787);
-    border-radius: 50px;
-    width: 98%;
-    justify-self: center;
-    min-height: 45vh;
+.container-cep {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-image: linear-gradient(to bottom right, #ddd, #878787);
+  border-radius: 50px;
+  width: 98%;
+  justify-self: center;
+  min-height: 45vh;
 }
 
-#result{
-    background-color: #737373dd;
-    padding: 10px;
-    border-radius: 15px;
-    margin-right: 5%;
-
+#result {
+  background-color: #737373dd;
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 5%;
 }
 
-.parteEsquerdaCep{
-    display: grid;
-    grid-template-rows:10% 40% 25% 25%;
-    background-color: #302d23;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+.parteEsquerdaCep {
+  display: grid;
+  grid-template-rows: 10% 40% 25% 25%;
+  background-color: #302d23;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
-.parteEsquerda{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-    background-color: #625e52;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+.parteEsquerda {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  background-color: #625e52;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
-.inserir-cep{
-    display: grid;
+.inserir-cep {
+  display: grid;
 }
 
-#cepForm{
-    display: grid;
+#cepForm {
+  display: grid;
 }
 
-#cep{
-    width: 25vw;
-    height: 7vh;
-    border-radius: 40px;
-    align-self: center;
-    justify-self: center;
-    border: none;
-    background-color: #e8e8e8dd;
+#cep {
+  width: 25vw;
+  height: 7vh;
+  border-radius: 40px;
+  align-self: center;
+  justify-self: center;
+  border: none;
+  background-color: #e8e8e8dd;
 }
 
-.cep-nome{
-    display: none;
+.cep-nome {
+  display: none;
 }
 
-#cep{
-    font-size: 150%;
+#cep {
+  font-size: 150%;
 }
 
-
-#buscar{
-    width: 15vw;
-    height: 6vh;
-    border: none;
-    border-radius: 40px;
-    justify-self: center;
-    background-color: #e8e8e8dd;
-    font-size: 120%;
+#buscar {
+  width: 15vw;
+  height: 6vh;
+  border: none;
+  border-radius: 40px;
+  justify-self: center;
+  background-color: #e8e8e8dd;
+  font-size: 120%;
 }
 
-.digite-cep{
-    margin: 0;
-    align-self: center;
-    justify-self: center;
-    flex-wrap: wrap;
-    font-family: 'Julius Sans One';
-    color: white;
+.digite-cep {
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  font-family: "Julius Sans One";
+  color: white;
 }
 
-.produtos-titulo{
-    font-family: 'Julius Sans one';
-    align-self: flex-end;
+.produtos-titulo {
+  font-family: "Julius Sans one";
+  align-self: flex-end;
 }
 
-
-
-.parteEsquerda p{
-    margin: 0;
+.parteEsquerda p {
+  margin: 0;
 }
 
-.container-geral{
-    display: grid;
+.container-geral {
+  display: grid;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #403924; 
-    border-radius: 5px;
-    transition: background 2s ease;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #262214; 
-  }
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #403924;
+  border-radius: 5px;
+  transition: background 2s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #262214;
+}
