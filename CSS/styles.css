@@ -89,11 +89,17 @@
 
   #cep{
 	border-radius: 5px;
-	border: 1px solid;
+	border: 1px solid #403924;
 	background-color: #fff;
+	height: 20px;
   }
 
   #btn-calcular{
 	border-radius: 5px;
-	border: 1px solid;
+	border: 1px solid #403924;
+	color: #403924;
+	height: 20px;
+	width: 70px;
+	background-color: #f0f0f0;
+	cursor: pointer;
   }

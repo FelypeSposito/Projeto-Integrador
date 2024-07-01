@@ -451,7 +451,7 @@ Credits
 
 
 .container{
-  height: 100vh;
+  height: 90vh;
 }
 
 @media screen and (min-width: 670px){
@@ -604,4 +604,26 @@ h1{
   }
 
 
+}
+
+.contBotao{
+  height: 10vh;
+  display: flex;
+}
+
+.btnVoltar{
+  border: 2px solid;
+  align-self: flex-start;
+  margin-left: 5%;
+  padding: 1%;
+  border-radius: 30px;
+  color: #cec19a;
+  text-decoration: none;
+  background-color: #221f17;
+  transition: all .5s cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+}
+
+.btnVoltar:hover{
+  background-color: #cec19a;
+  color: #403924;
 }
