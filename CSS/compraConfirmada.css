@@ -1383,6 +1383,7 @@ h1.title {
   grid-row: 3;
   justify-self: center;
   color: #403924;
+  font-size: 150%;
 }
 
 @media screen and (max-width: 860px) {
@@ -1394,6 +1395,7 @@ h1.title {
   .confirmacao p {
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 120%;
   }
 }
 
